@@ -8,7 +8,7 @@ context_window: 200000
 temperature: 0.2
 max_tokens: 8192
 terminal:
-  backend: docker
+  backend: local
   timeout_seconds: 180
   max_output_bytes: 102400
   container_image: hermes-sandbox:latest
