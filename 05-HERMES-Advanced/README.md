@@ -84,11 +84,30 @@
 │   ├── 15-p2p-agent-mesh/SKILL.md         ← Decentralized A2A multi-node protocol
 │   └── 16-physical-iot/SKILL.md           ← Home Assistant & hardware environment bridge
 │
-└── docs/                                  ← Architecture & Flagship Guides
-    ├── 02-Architecture.md                 ← 15-plane architecture deep dive
-    ├── 06-Search-Optimization.md          ← Flagship: How Hermes search works
-    ├── 07-Project-Synthesis-Plan.md       ← Multi-repo synthesis blueprint
-    └── 08-Deep-Cognitive-Architecture.md  ← Deep learning & cognitive architecture
+├── references/                            ← Domain Playbooks & Role Pass Protocols
+│   ├── domain_playbooks.md                ← Code, Research, DevOps, Data Science Playbooks
+│   ├── role_passes.md                     ← Researcher, Critic, Builder, Evaluator, Supervisor
+│   └── gates_and_scoring.md               ← Hard Binary Gates vs Soft Continuous Scoring
+│
+├── prompts/                               ← Meta-Prompt Blueprint Generators
+│   ├── 01-Master-Orchestration-Prompt.md  ← Master Swarm & Role Generator Prompt
+│   └── 02-Goal-Driven-Execution-Prompt.md ← Autonomous Goal-Seeking Loop Generator
+│
+├── docs/                                  ← Complete 10-Part Architectural Documentation
+│   ├── 01-Executive-Summary.md
+│   ├── 02-Architecture-Overview.md
+│   ├── 03-Operating-Loop.md
+│   ├── 04-World-Model-and-Memory.md
+│   ├── 05-Planning-and-Search.md
+│   ├── 06-Multi-Agent-Orchestration.md
+│   ├── 07-Tools-and-Environment.md
+│   ├── 08-Safety-and-Governance.md
+│   ├── 09-Evaluation-and-Evolution.md
+│   ├── 10-Implementation-Guide.md
+│   ├── 06-Search-Optimization.md
+│   ├── 07-Project-Synthesis-Plan.md
+│   └── 08-Deep-Cognitive-Architecture.md
+│
 ```
 
 ---
