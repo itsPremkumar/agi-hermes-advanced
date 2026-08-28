@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 STATE_DIR = Path(__file__).resolve().parent.parent / "state"
 
-VALID_STATES = ["world_state", "self_model", "belief_graph", "mission_graph"]
+VALID_STATES = ["world_state", "self_model", "belief_graph", "mission_graph", "financial_ledger", "evolution_benchmarks"]
 
 def get_state_path(state_name: str) -> Path:
     name = state_name.replace(".json", "")
