@@ -392,7 +392,19 @@ Expert review (2026): Current Hermes is already "advanced protocol" — next jum
 **Full plan:** docs/08-Deep-Cognitive-Architecture.md + Skill: skills/11-deep-cognition/SKILL.md
 **Source:**  1-ARCHIVE-Clean/07-Random-Name-Archive-Cleaned/13-Hermes-Deep-Architecture-Review-2026.md (cleaned from dfsdg) — 19 recommendations from AVO, DGM, AlphaEvolve, SIMA 2, Genie 3, Letta
 
-## 13. HERMES HUB RECOMMENDED — TOP 5 HUB SKILLS [SKILL 10]
+## 13. HERMES BOT MODE AGI — 10 PERSISTENT BOTS AS BRAIN [SKILL 12]
+
+**Bot Mode is NOT just a roster — it is a persistent cognitive architecture:**
+
+- **10 Bots as organs:** @mission, @world, @self, @memory, @dream, @skill-forge, @curriculum, @planner, @belief, @verifier — each is a real Hermes profile with isolated memory/skills, never dies
+- **Routines as organs:** @dream runs 13-step sleep cycle at 2am, @world re-estimates every 4h, @self updates empirical success after every task
+- **Group chat IS reasoning:** User asks → @planner group-chats Cognition (@planner+@world+@belief+@self+@verifier+@curriculum, 6 Bots, 3 rounds) *before* answering — you see one answer, but 6 Bots deliberated
+- **Makes Hermes DEEPER not bigger:** From "advanced protocol" to "continually learning cognitive architecture" (19 deep recommendations from expert review)
+
+**Full skill:** skills/12-bot-mode-agi/SKILL.md + docs/08-Deep-Cognitive-Architecture.md
+**Requires:** Hermes Desktop v0.20.3+ (Bot Mode default-on)
+
+## 14. HERMES HUB RECOMMENDED — TOP 5 HUB SKILLS [SKILL 10]
 
 Before building any Hermes feature from scratch, search the Hub first (90K skills):
 
