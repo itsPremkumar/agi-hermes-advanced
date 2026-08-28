@@ -1,6 +1,6 @@
 # HERMES Advanced — Universal AGI/ASI Executive System
 
-**Version:** 4.0 ASI Universal Master (Hermes-Native) + SOUL v4.0 ASI + 16 Active Cognitive Engines  
+**Version:** 4.0 ASI Universal Master (Hermes-Native) + SOUL v4.0 ASI + 19 Active Cognitive Engines & MCP Bridges  
 **Type:** Production Hermes-Native Build — Fully Executable, State-Backed, Official-Compliant  
 **Hermes Runtime:** Hermes Agent (Nous Research) — https://hermes-agent.nousresearch.com  
 **Language:** English Only — Production Standard
@@ -27,7 +27,7 @@
 │       │   ├── mission_graph.json         ← Long-horizon DAG & blocker resolution (METR)
 │       │   ├── financial_ledger.json      ← Token budget, burn rate, and API cost ledger
 │       │   └── evolution_benchmarks.json  ← GEPA Pareto mutation history and skill scores
-│       ├── scripts/                       ← 16 Active Python Cognitive Engines
+│       ├── scripts/                       ← 19 Active Python Cognitive Engines & MCP Bridges
 │       │   ├── state_engine.py            ← Schema validation, atomic reads/writes, backups
 │       │   ├── belief_engine.py           ← Bayesian posterior updater & cascade triggers
 │       │   ├── self_tracker.py            ← Post-task empirical logger & calibration score
@@ -48,7 +48,16 @@
 │           ├── 01_nightly_dream.json      ← 2:00 AM 13-step dream cycle routine
 │           ├── 02_world_sync.json         ← 4-hour world estimation & forecast sync
 │           ├── 03_post_task_hook.json     ← Post-task empirical calibration hook
-│           └── 04_curriculum_sync.json    ← Weekly curriculum sync & self-improvement
+│           │   ├── hybrid_memory_engine.py    ← BM25 + dense semantic vector hybrid memory retriever
+│   ├── formal_prover_mcp.py       ← Native MCP stdio theorem proving bridge
+│   └── guardrail_manager.py       ← Hard budget ceilings and loop guardrail enforcement
+│
+└── routines/
+    ├── 01_nightly_dream.json      ← 2:00 AM 13-step dream cycle routine
+    ├── 02_world_sync.json         ← 4-hour world estimation & forecast sync
+    ├── 03_post_task_hook.json     ← Post-task empirical calibration hook
+    ├── 04_curriculum_sync.json    ← Weekly curriculum sync & self-improvement
+    └── 05_weekly_gepa_evolution.json ← Sunday 3:00 AM automated GEPA prompt evolution
 │
 ├── SOUL.md                                ← Global base identity (Slot #1)
 ├── AGENTS.md                              ← Project context
@@ -102,7 +111,7 @@ hermes -p asi-bot chat
 
 ---
 
-## The 16 Active Cognitive Engines (All Tested & Verified)
+## The 19 Active Cognitive Engines & MCP Bridges (All Tested & Verified)
 
 1. **State Engine (`state_engine.py`)**: Schema validation, atomic reads/writes, and backups.
 2. **Bayesian Belief Engine (`belief_engine.py`)**: Bayesian posterior calculation and cascade triggers.

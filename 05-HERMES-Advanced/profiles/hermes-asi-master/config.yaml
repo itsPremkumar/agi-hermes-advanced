@@ -111,3 +111,18 @@ fallback_providers:
   model: RefinedNeuro/vibethinker-3b-hermes
 agent:
   reasoning_effort: ultra
+hooks:
+  on_session_start: python scripts/state_engine.py --validate
+  on_turn_end: python scripts/self_tracker.py --sync
+  on_tool_call: python scripts/formal_verifier.py --gate
+mcp_servers:
+  formal-prover:
+    command: python
+    args:
+    - scripts/formal_prover_mcp.py
+    enabled: true
+economic_guardrails:
+  max_daily_budget_usd: 5.0
+  max_monthly_budget_usd: 100.0
+  hard_stop_on_budget_exceeded: true
+  fallback_to_local_on_exhaustion: true
