@@ -1,0 +1,58 @@
+﻿# HERMES Advanced Project — Root .gitignore
+# Keeps secrets, worktrees, runtime, and OS files out of git
+
+# ── Secrets (NEVER commit) ──
+.env
+*.env
+!.env.example
+auth.json
+*_token.json
+*_secret.json
+google_token.json
+google_client_secret.json
+*.pem
+*.key
+
+# ── Hermes Runtime ──
+.hermes/
+sessions.db
+checkpoints/
+*.db
+*.sqlite
+
+# ── Git Worktrees (Hermes parallel work) ──
+.worktrees/
+hermes-worktree-*
+.delegate/
+
+# ── Evidence & Synthesis Output (per-task) ──
+evidence/
+synthesis-output/
+integration/
+staging/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ── Node ──
+node_modules/
+npm-debug.log*
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+*.swp
+
+# ── IDE ──
+.vscode/
+.idea/
+
+# ── Logs ──
+*.log
+logs/

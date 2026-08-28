@@ -1,0 +1,109 @@
+# config.yaml — AGI Executive Agent v8.0 Clean
+# Starter configuration aligned with SKILL.md and SOUL.md
+# Secrets (API keys, tokens, passwords) do NOT go here — put them in .env
+# Full reference: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+
+# --- Model Provider ---
+# Requirement: model needs >= 64,000 tokens of context for multi-step tool-calling
+provider: "REPLACE_ME"          # e.g. "anthropic", "openrouter", "nous", "openai"
+model: "REPLACE_ME"             # e.g. "anthropic/claude-sonnet-4", "openai/gpt-4o"
+# base_url: "https://..."       # only if calling a custom or self-hosted endpoint
+# api_key_env: "ANTHROPIC_API_KEY"  # env var name that holds the key (kept in .env)
+
+# --- Terminal Backend ---
+# Pick the most sandboxed backend your setup allows.
+# This is the backend SOUL.md sections 17 and 19 treat as high-blast-radius.
+terminal:
+  backend: "REPLACE_ME"         # e.g. "docker", "local", "remote"
+  timeout_seconds: 120
+  max_output_bytes: 51200
+
+# --- Memory ---
+# Enforces SOUL.md sections 19-20 (memory ethos and integrity) and SKILL.md section 7 (Memory OS)
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200        # ~800 tokens — backs MEMORY.md
+  user_char_limit: 1375          # ~500 tokens — backs USER.md
+  write_approval: true           # true = agent asks before writing memory (recommended)
+                                # false = agent writes freely (Hermes default)
+  ttl_default_days: 90           # auto-expire low-importance memories
+  provenance_required: true      # every memory must have source and confidence
+
+# --- Toolsets ---
+# Start narrow, add deliberately (SKILL.md sections 12-13, SOUL.md section 14)
+# High-blast-radius tools are commented out — enabling them is a decision, not a default
+toolsets:
+  enabled:
+    - web_search
+    - file_read
+    # - file_write              # review workspace scoping before enabling
+    # - terminal_exec           # high blast-radius — SOUL.md sections 15-17
+    # - browser                 # enable only with sandbox + approval policy
+    # - computer_use            # requires dedicated evaluation + containment
+    # - messaging_send          # high blast-radius — SKILL.md R4/R5, SOUL.md section 15
+  allowlist: []                 # explicit tool allowlist (empty = use enabled list)
+  blocklist: []                 # always-blocked tools
+
+# --- Permissions and Risk ---
+# Maps to SKILL.md section 13 (Risk Engine) and SOUL.md section 5 (Authority Model)
+permissions:
+  default_policy: deny          # deny by default, grant minimum required
+  approval_required_for: [R4, R5]  # tiers requiring explicit approval
+  auto_approve: [R0, R1, R2]    # safe tiers — still logged
+  # approver: "user"            # who approves R4/R5 actions
+  audit_log: true
+  least_privilege: true
+
+# --- Sandboxing ---
+sandbox:
+  enabled: true
+  filesystem_policy: restricted # restricted | isolated | unrestricted
+  network_policy: limited        # none | limited | unrestricted
+  process_policy: contained      # contained | unrestricted
+  resource_limits:
+    memory_mb: 2048
+    cpu_percent: 80
+    timeout_seconds: 300
+
+# --- Scheduling and Continuity ---
+# Maps to SKILL.md section 17 (Continuous Operation)
+scheduler:
+  enabled: false                # set true for 24/7 operation
+  heartbeat_interval_seconds: 60
+  lease_timeout_seconds: 300
+  checkpoint_interval_minutes: 10
+  max_concurrent_missions: 3
+  max_concurrent_agents: 8
+
+# --- Evaluation ---
+# Maps to SKILL.md section 15 (Evaluation-First Architecture)
+evaluation:
+  enabled: true
+  run_on_completion: true
+  benchmarks: []                # e.g. ["swe-bench", "custom-suite"]
+  regression_protection: true
+  evaluator_model: ""           # separate model for independent verification (recommended)
+
+# --- World Model ---
+world_model:
+  persist: true
+  max_entities: 1000
+  max_transitions: 10000
+  snapshot_on_checkpoint: true
+
+# --- Logging and Observability ---
+logging:
+  level: info                   # debug | info | warn | error
+  structured: true
+  include_provenance: true
+  redact_secrets: true
+  retention_days: 30
+
+# --- Agent Factory ---
+agents:
+  max_depth: 3                  # max delegation depth
+  max_fanout: 6                 # max children per parent
+  default_budget_tokens: 8000
+  default_timeout_seconds: 180
+  require_termination_condition: true

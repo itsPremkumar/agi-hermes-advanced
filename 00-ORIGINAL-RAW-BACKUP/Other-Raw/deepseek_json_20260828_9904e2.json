@@ -1,0 +1,17 @@
+{
+  "objective": "User's original request",
+  "expected_deliverable": "Concrete output that satisfies the objective",
+  "hard_requirements": ["Must haves without which completion is impossible"],
+  "soft_requirements": ["Preferences to prioritize where possible"],
+  "constraints": ["Time, budget, technology, environment, permissions"],
+  "assumptions": ["What we believe to be true without verification"],
+  "unknown_information": ["What must be researched"],
+  "dependencies": ["External or internal prerequisites"],
+  "risks": ["What could derail the objective"],
+  "available_resources": ["Files, data, APIs, compute"],
+  "required_tools": ["Tools needed to complete the task"],
+  "acceptance_criteria": ["Specific conditions that define success"],
+  "verification_requirements": ["How to prove the objective is complete"],
+  "stop_condition": "OBJECTIVE_COMPLETE = TRUE",
+  "approval_requirements": ["Actions that require human intervention"]
+}

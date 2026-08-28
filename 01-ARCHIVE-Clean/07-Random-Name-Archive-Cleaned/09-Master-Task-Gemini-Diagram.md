@@ -1,0 +1,2783 @@
+﻿# Master Task Gemini with Diagram
+
+> **Original File:** `fxgfxn` (random name, 68520 bytes)
+> **New Proper Name:** `09-Master-Task-Gemini-Diagram.md`
+> **Description:** Master Task Gemini with Diagram
+> **Cleaned:** 2026-08-28 | **Language:** English Only | **Content:** Proper live English (binary/garbled removed)
+
+---
+
+
+Conversation with Gemini
+MASTER TASK
+
+
+
+Create exactly ONE production-grade SKILL.md file that defines a highly advanced, universal, goal-driven autonomous execution system for an AI agent harness.
+
+
+
+The skill must be designed as a general-purpose autonomous orchestration layer, not as a simple prompt, checklist, coding skill, or research skill.
+
+
+
+The resulting agent must be capable of taking a complex user objective, understanding it, researching it, decomposing it, creating competing plans, spawning specialized subagents, running independent work in parallel, evaluating every subagent's result, selecting the strongest work, combining the best parts of multiple agents, executing the synthesized plan, testing it, repairing failures, evolving the solution through multiple controlled rounds, and finally stopping once the objective is actually complete.
+
+
+
+The final deliverable must be:
+
+
+
+SKILL.md
+
+
+
+Do not create multiple skill files.
+
+
+
+Do not create unnecessary supporting files.
+
+
+
+Do not hardcode a particular repository architecture.
+
+
+
+Do not hardcode specific filenames such as agx/kernel.py, agx/research.py, etc.
+
+
+
+Do not assume AGX, Hermes, OpenClaw, DeepAgents, LangGraph, CrewAI, or any other specific framework exists.
+
+
+
+The skill must dynamically adapt to whatever tools and subagent capabilities are available in the active harness.
+
+
+
+1. CORE MISSION
+
+
+
+The central principle must be:
+
+
+
+Do the actual work required to achieve the user's objective, not merely discuss how to do it.
+
+
+
+The agent should behave like a highly capable autonomous project organization.
+
+
+
+It should be able to:
+
+
+
+UNDERSTAND  INVESTIGATE  RESEARCH  DECOMPOSE  PLAN  CREATE COMPETING PLANS  SPAWN SPECIALISTS  RUN PARALLEL WORK  COLLECT RESULTS  VERIFY RESULTS  SELECT BEST WORK  MERGE BEST COMPONENTS  CREATE SUPERIOR MASTER PLAN  EXECUTE  TEST  CRITIQUE  REPAIR  EVOLVE  RE-EVALUATE  FINAL AUDIT  DELIVER  STOP
+
+
+
+The agent must optimize for:
+
+
+
+actual goal completion;
+
+
+
+correctness;
+
+
+
+completeness;
+
+
+
+evidence;
+
+
+
+reliability;
+
+
+
+quality;
+
+
+
+efficiency;
+
+
+
+safety;
+
+
+
+reproducibility;
+
+
+
+maintainability.
+
+
+
+It must NOT optimize for:
+
+
+
+number of agents;
+
+
+
+number of tool calls;
+
+
+
+token consumption;
+
+
+
+number of research searches;
+
+
+
+number of iterations;
+
+
+
+unnecessary complexity;
+
+
+
+staying active forever.
+
+
+
+2. THE AGENT MUST THINK IN OBJECTIVES, NOT CHAT TURNS
+
+
+
+The skill must explicitly state:
+
+
+
+A user conversation is not the unit of work.
+
+
+
+The objective is the unit of work.
+
+
+
+The agent must maintain an internal objective state until:
+
+
+
+OBJECTIVE_COMPLETE = TRUE
+
+
+
+Only then should the execution terminate.
+
+
+
+The agent must not prematurely stop merely because it produced:
+
+
+
+an explanation;
+
+
+
+a plan;
+
+
+
+a partial result;
+
+
+
+a draft;
+
+
+
+some code;
+
+
+
+a research summary;
+
+
+
+one successful experiment.
+
+
+
+3. GOAL CONTRACT
+
+
+
+At the beginning of every substantial task, construct an internal goal contract.
+
+
+
+It must contain:
+
+
+
+OBJECTIVE EXPECTED_DELIVERABLE HARD_REQUIREMENTS SOFT_REQUIREMENTS CONSTRAINTS ASSUMPTIONS UNKNOWN_INFORMATION DEPENDENCIES RISKS AVAILABLE_RESOURCES REQUIRED_TOOLS REQUIRED_RESEARCH ACCEPTANCE_CRITERIA VERIFICATION_REQUIREMENTS STOP_CONDITION APPROVAL_REQUIREMENTS
+
+
+
+The original user objective is authoritative.
+
+
+
+Never silently change the objective.
+
+
+
+Never weaken acceptance criteria simply to claim success.
+
+
+
+4. REQUIREMENT DISCOVERY
+
+
+
+Before planning, identify:
+
+
+
+Explicit requirements
+
+
+
+Everything directly requested.
+
+
+
+Implicit requirements
+
+
+
+Everything necessary for the requested result to actually work.
+
+
+
+Hidden dependencies
+
+
+
+Things that must exist before execution.
+
+
+
+Quality requirements
+
+
+
+Correctness, reliability, completeness, performance, maintainability, etc.
+
+
+
+Constraints
+
+
+
+Technology, budget, environment, permissions, privacy, compatibility, deadline, etc.
+
+
+
+Unknowns
+
+
+
+Information that must be researched or discovered.
+
+
+
+Classify them as:
+
+
+
+HARD_REQUIREMENT PREFERENCE ASSUMPTION UNKNOWN DEPENDENCY RISK
+
+
+
+5. TASK COMPLEXITY ENGINE
+
+
+
+The agent must dynamically estimate:
+
+
+
+COMPLEXITY UNCERTAINTY SCOPE DEPENDENCIES RESEARCH_DEPTH TOOL_REQUIREMENTS PARALLELISM_OPPORTUNITY RISK VERIFICATION_DIFFICULTY EXPECTED_COST
+
+
+
+Then dynamically choose the execution strategy.
+
+
+
+Simple task
+
+
+
+Use:
+
+
+
+UNDERSTAND  EXECUTE  VERIFY  STOP
+
+
+
+Medium task
+
+
+
+Use:
+
+
+
+UNDERSTAND  RESEARCH  PLAN  EXECUTE  VERIFY  STOP
+
+
+
+Complex task
+
+
+
+Use:
+
+
+
+UNDERSTAND  RECON  DECOMPOSE  MULTI-PLAN  MULTI-AGENT  PARALLEL RESEARCH  SYNTHESIS  CRITIC  EXECUTE  VERIFY  EVOLVE  FINAL AUDIT  STOP
+
+
+
+Do not use complex orchestration for trivial tasks.
+
+
+
+6. COMPLETE ENVIRONMENT RECONNAISSANCE
+
+
+
+Before making important decisions, inspect everything relevant that is available.
+
+
+
+Depending on the task, inspect:
+
+
+
+files;
+
+
+
+repositories;
+
+
+
+project instructions;
+
+
+
+documentation;
+
+
+
+configuration;
+
+
+
+dependencies;
+
+
+
+environment;
+
+
+
+existing implementation;
+
+
+
+previous artifacts;
+
+
+
+tests;
+
+
+
+APIs;
+
+
+
+databases;
+
+
+
+available tools;
+
+
+
+existing memory;
+
+
+
+previous failures;
+
+
+
+external documentation.
+
+
+
+Never assume the environment is empty.
+
+
+
+Never recreate something that already exists without checking.
+
+
+
+7. AUTOMATIC TASK DECOMPOSITION
+
+
+
+Break the objective into meaningful subgoals.
+
+
+
+Create a dependency graph.
+
+
+
+Example:
+
+
+
+MAIN OBJECTIVE   RESEARCH   QUESTION A   QUESTION B   QUESTION C   DESIGN   PLAN A   PLAN B   PLAN C   IMPLEMENTATION   COMPONENT A   COMPONENT B   COMPONENT C   VALIDATION  TEST A  TEST B  FINAL AUDIT
+
+
+
+For each task define:
+
+
+
+TASK_ID DESCRIPTION PURPOSE INPUTS OUTPUT DEPENDENCIES OWNER TOOLS RISK VALIDATION COMPLETION_CONDITION
+
+
+
+8. PARALLELISM ENGINE
+
+
+
+Identify work that can safely run independently.
+
+
+
+Classify:
+
+
+
+PARALLEL_SAFE SEQUENTIAL DEPENDENT SHARED_STATE BLOCKED OPTIONAL FINAL_INTEGRATION
+
+
+
+Parallelize:
+
+
+
+independent research;
+
+
+
+independent source verification;
+
+
+
+competing plans;
+
+
+
+independent architecture proposals;
+
+
+
+independent experiments;
+
+
+
+independent testing;
+
+
+
+independent critiques.
+
+
+
+Do not parallelize conflicting modifications to shared state unless isolation is available.
+
+
+
+9. MULTI-PLAN GENERATION
+
+
+
+For sufficiently complex tasks, never commit to the first plan.
+
+
+
+Generate multiple competing plans.
+
+
+
+At minimum:
+
+
+
+PLAN A  SAFE / PROVEN
+
+
+
+Prioritize reliability and low risk.
+
+
+
+PLAN B  OPTIMIZED
+
+
+
+Prioritize quality, performance, efficiency, or scalability.
+
+
+
+PLAN C  ALTERNATIVE
+
+
+
+Use a substantially different strategy.
+
+
+
+For very complex tasks, generate additional specialized plans.
+
+
+
+Every plan must contain:
+
+
+
+OBJECTIVE STRATEGY TASK_GRAPH TOOLS DEPENDENCIES RISKS ASSUMPTIONS RESEARCH_REQUIRED EXECUTION_STEPS VALIDATION ROLLBACK EXPECTED_RESULT
+
+
+
+10. PLAN COMPETITION
+
+
+
+Plans must compete against one another.
+
+
+
+Evaluate:
+
+
+
+CORRECTNESS COMPLETENESS EVIDENCE RISK COST TIME SIMPLICITY ROBUSTNESS MAINTAINABILITY SCALABILITY REVERSIBILITY VERIFIABILITY USER_FIT
+
+
+
+Do not select the first valid plan.
+
+
+
+Do not select solely on theoretical quality.
+
+
+
+Select based on the actual user's objective.
+
+
+
+11. SPECIALIST SUBAGENT SYSTEM
+
+
+
+When subagents are available, dynamically create specialists.
+
+
+
+Possible subagents:
+
+
+
+Goal Analyst
+
+
+
+Extracts requirements and acceptance criteria.
+
+
+
+Recon Agent
+
+
+
+Inspects environment and existing resources.
+
+
+
+Planner Agents
+
+
+
+Create independent plans.
+
+
+
+Deep Research Agents
+
+
+
+Investigate different dimensions of the problem.
+
+
+
+Web Research Agents
+
+
+
+Find current external information.
+
+
+
+Primary Source Agent
+
+
+
+Finds official documentation and authoritative evidence.
+
+
+
+Contradiction Agent
+
+
+
+Searches specifically for conflicting information.
+
+
+
+Domain Expert
+
+
+
+Handles specialized knowledge.
+
+
+
+Architect
+
+
+
+Creates technical/system architecture.
+
+
+
+Implementation Agent
+
+
+
+Performs execution.
+
+
+
+Data Agent
+
+
+
+Collects and analyzes structured information.
+
+
+
+Testing Agent
+
+
+
+Creates and executes tests.
+
+
+
+Critic Agent
+
+
+
+Attempts to invalidate proposed solutions.
+
+
+
+Security Agent
+
+
+
+Checks security and privacy.
+
+
+
+Performance Agent
+
+
+
+Searches for measurable optimization.
+
+
+
+Recovery Agent
+
+
+
+Diagnoses failures.
+
+
+
+Alternative Strategy Agent
+
+
+
+Creates fundamentally different approaches.
+
+
+
+Integration Agent
+
+
+
+Combines outputs from multiple agents.
+
+
+
+Final Verification Agent
+
+
+
+Independently verifies the complete result.
+
+
+
+Supervisor Agent
+
+
+
+Monitors the entire orchestration process.
+
+
+
+Do not automatically spawn all roles.
+
+
+
+Use expected value to decide which agents are necessary.
+
+
+
+12. SUBAGENT TASK DESIGN
+
+
+
+Every subagent must receive a precise task contract:
+
+
+
+PARENT_OBJECTIVE SUBTASK WHY_THIS_TASK_EXISTS CONTEXT INPUTS EXPECTED_OUTPUT SUCCESS_CRITERIA CONSTRAINTS TOOLS RESEARCH_REQUIREMENTS PROHIBITED_ACTIONS RETURN_FORMAT
+
+
+
+Do not give vague instructions such as:
+
+
+
+"Research this."
+
+
+
+Instead provide:
+
+
+
+"What exact question must be answered, what evidence is required, what alternatives must be compared, and what decision will this research influence?"
+
+
+
+13. SUBAGENT INDEPENDENCE
+
+
+
+Independent subagents should not blindly inherit the assumptions of other agents.
+
+
+
+For competing approaches:
+
+
+
+provide the same objective;
+
+
+
+provide equivalent constraints;
+
+
+
+allow independent reasoning;
+
+
+
+prevent premature convergence.
+
+
+
+This prevents all agents from repeating the same mistake.
+
+
+
+14. SUBAGENT RESULT CONTRACT
+
+
+
+Every subagent should return:
+
+
+
+RESULT EVIDENCE CONFIDENCE ASSUMPTIONS RISKS FAILURES ALTERNATIVES RECOMMENDATION UNRESOLVED_QUESTIONS
+
+
+
+The orchestrator must evaluate the result.
+
+
+
+A subagent's confidence is not evidence.
+
+
+
+15. DEEP RESEARCH SYSTEM
+
+
+
+Deep research must be structured.
+
+
+
+Research Phase 1  Discovery
+
+
+
+Search broadly for:
+
+
+
+terminology;
+
+
+
+candidates;
+
+
+
+implementations;
+
+
+
+official sources;
+
+
+
+recent developments;
+
+
+
+related approaches.
+
+
+
+Research Phase 2  Evidence
+
+
+
+Verify important claims using:
+
+
+
+primary sources;
+
+
+
+official documentation;
+
+
+
+source code;
+
+
+
+specifications;
+
+
+
+release notes;
+
+
+
+reliable technical research.
+
+
+
+Research Phase 3  Adversarial Research
+
+
+
+Explicitly search for:
+
+
+
+failures;
+
+
+
+criticisms;
+
+
+
+limitations;
+
+
+
+contradictions;
+
+
+
+deprecated features;
+
+
+
+incompatibilities;
+
+
+
+security problems;
+
+
+
+hidden costs;
+
+
+
+edge cases;
+
+
+
+misleading claims.
+
+
+
+Research Phase 4  Decision Research
+
+
+
+Focus only on unknowns capable of changing the final plan.
+
+
+
+Research Phase 5  Final Fact Check
+
+
+
+Before delivery, verify important time-sensitive claims again.
+
+
+
+16. RESEARCH PARALLELIZATION
+
+
+
+For complex research create independent research streams.
+
+
+
+Example:
+
+
+
+RESEARCHER A  official documentation RESEARCHER B  GitHub/source implementations RESEARCHER C  academic/technical evidence RESEARCHER D  recent developments RESEARCHER E  limitations/failures RESEARCHER F  alternative solutions
+
+
+
+Then combine the results.
+
+
+
+Do not simply concatenate reports.
+
+
+
+17. EVIDENCE MATRIX
+
+
+
+Maintain:
+
+
+
+CLAIM SOURCE SOURCE_TYPE DATE EVIDENCE CONTRADICTIONS CONFIDENCE IMPACT
+
+
+
+Important decisions must have stronger evidence.
+
+
+
+Distinguish:
+
+
+
+FACT INFERENCE ASSUMPTION UNKNOWN
+
+
+
+Never fabricate evidence.
+
+
+
+18. SUBAGENT BEST-RESULT SELECTION
+
+
+
+This is a critical requirement.
+
+
+
+For every group of parallel subagents:
+
+
+
+collect every result;
+
+
+
+normalize outputs;
+
+
+
+compare quality;
+
+
+
+identify strongest components;
+
+
+
+identify unique useful insights;
+
+
+
+identify contradictions;
+
+
+
+reject unsupported claims;
+
+
+
+select the best result;
+
+
+
+preserve useful components from other results;
+
+
+
+construct a superior merged result.
+
+
+
+Do NOT simply choose one entire subagent output.
+
+
+
+Instead use:
+
+
+
+BEST_RESEARCH_A + BEST_RESEARCH_B + BEST_ARCHITECTURE + BEST_EXPERIMENT + BEST_CRITIQUE = SUPERIOR_SYNTHESIS
+
+
+
+The synthesis must be better than any individual result where possible.
+
+
+
+19. BEST-OF-N SUBAGENT EVOLUTION
+
+
+
+For important subtasks:
+
+
+
+SUBAGENT A  RESULT A SUBAGENT B  RESULT B SUBAGENT C  RESULT C SUBAGENT D  RESULT D  EVALUATOR  BEST COMPONENTS IDENTIFIED  SYNTHESIS  CRITIC AGENT  IMPROVED VERSION
+
+
+
+Repeat only when meaningful improvement remains.
+
+
+
+20. CROSS-CRITIQUE
+
+
+
+Subagents should critique each other's proposals when useful.
+
+
+
+Example:
+
+
+
+PLAN A PLAN B PLAN C  CRITIC A reviews B/C CRITIC B reviews A/C CRITIC C reviews A/B  INTEGRATOR
+
+
+
+Critiques must focus on:
+
+
+
+correctness;
+
+
+
+missing requirements;
+
+
+
+weak assumptions;
+
+
+
+evidence;
+
+
+
+risks;
+
+
+
+implementation feasibility;
+
+
+
+hidden failure modes.
+
+
+
+21. MASTER PLAN SYNTHESIS
+
+
+
+After research and parallel planning:
+
+
+
+collect all results;
+
+
+
+normalize;
+
+
+
+deduplicate;
+
+
+
+resolve contradictions;
+
+
+
+rank evidence;
+
+
+
+identify best components;
+
+
+
+merge compatible strengths;
+
+
+
+eliminate weak components;
+
+
+
+produce a master plan;
+
+
+
+run a critic against the master plan.
+
+
+
+The master plan should explicitly identify:
+
+
+
+OBJECTIVE PHASES TASKS DEPENDENCIES PARALLEL TASKS SEQUENTIAL TASKS TOOLS SUBAGENTS RISKS CHECKPOINTS VALIDATION ROLLBACK SUCCESS CRITERIA
+
+
+
+22. CRITIC GATE
+
+
+
+Before major execution:
+
+
+
+MASTER PLAN  CRITIC
+
+
+
+The critic must attempt to break the plan.
+
+
+
+Ask:
+
+
+
+Is anything missing?
+
+
+
+Are assumptions justified?
+
+
+
+Are dependencies correct?
+
+
+
+Is the plan overcomplicated?
+
+
+
+Is there a better alternative?
+
+
+
+What can fail?
+
+
+
+What evidence is missing?
+
+
+
+What is the smallest validation experiment?
+
+
+
+What could cause regression?
+
+
+
+Can the task be completed more efficiently?
+
+
+
+Possible outcome:
+
+
+
+PASS REVISE RESEARCH_MORE REPLAN DISCARD
+
+
+
+23. EXECUTION ORCHESTRATION
+
+
+
+Execution must follow the dependency graph.
+
+
+
+Independent tasks run in parallel.
+
+
+
+Dependent tasks wait for validated prerequisites.
+
+
+
+Use:
+
+
+
+TASK  EXECUTE  VERIFY  CHECKPOINT  UNLOCK_DEPENDENCIES
+
+
+
+Never allow an unverified failed result to become an input to downstream tasks.
+
+
+
+24. EXECUTION SUBAGENTS
+
+
+
+When useful, separate:
+
+
+
+PLANNER IMPLEMENTER TESTER VERIFIER
+
+
+
+Do not let the same agent automatically declare its own work correct.
+
+
+
+25. CONTINUOUS SUPERVISION
+
+
+
+The supervisor must monitor:
+
+
+
+PROGRESS FAILURES DEPENDENCIES RESOURCE_USAGE SUBAGENT_RESULTS RESEARCH_QUALITY QUALITY_GATES STAGNATION RISK
+
+
+
+It may decide:
+
+
+
+CONTINUE PARALLELIZE SERIALIZE DELEGATE RESEARCH VERIFY REPAIR REPLAN EVOLVE STOP
+
+
+
+26. FAILURE RECOVERY
+
+
+
+Never endlessly retry the same operation.
+
+
+
+Classify:
+
+
+
+TRANSIENT TOOL_FAILURE NETWORK PERMISSION DEPENDENCY ENVIRONMENT DATA LOGIC RESEARCH SPECIFICATION MODEL_REASONING INFRASTRUCTURE SECURITY
+
+
+
+Recovery:
+
+
+
+DIAGNOSE  RETRY IF JUSTIFIED  CHANGE TOOL  CHANGE PARAMETERS  REDUCE SCOPE  SPECIALIST  CHANGE APPROACH  RESTORE CHECKPOINT  REPLAN
+
+
+
+27. FAILURE MEMORY
+
+
+
+Record:
+
+
+
+FAILED_APPROACH FAILURE_SIGNATURE ROOT_CAUSE ATTEMPTS LESSON RECOVERY DO_NOT_REPEAT
+
+
+
+Before creating a new approach, inspect previous failures.
+
+
+
+28. EVOLUTION ENGINE
+
+
+
+Evolution is one of the core capabilities.
+
+
+
+The system must be able to improve:
+
+
+
+plans;
+
+
+
+research strategies;
+
+
+
+subagent prompts;
+
+
+
+task decomposition;
+
+
+
+architecture;
+
+
+
+implementation;
+
+
+
+testing;
+
+
+
+final outputs.
+
+
+
+Evolution cycle:
+
+
+
+CURRENT_RESULT  EVALUATE  FIND_WEAKNESSES  GENERATE_IMPROVEMENTS  PARALLEL_SUBAGENTS  RUN_EXPERIMENTS  COMPARE  CRITIC  SELECT BEST  MERGE BEST COMPONENTS  CREATE NEXT VERSION  VERIFY  REPEAT IF USEFUL
+
+
+
+29. EVOLVE SUBAGENT TASKS THEMSELVES
+
+
+
+A critical advanced requirement:
+
+
+
+The system must not only evolve the final answer.
+
+
+
+It should also evolve how subagents perform their tasks.
+
+
+
+For example:
+
+
+
+ROUND 1 Researcher Prompt A  weak evidence ROUND 2 Researcher Prompt B  stronger source coverage ROUND 3 Researcher Prompt C  better contradiction detection
+
+
+
+Compare the approaches and retain the task strategy that produces better results.
+
+
+
+This creates:
+
+
+
+TASK EVOLUTION + SUBAGENT EVOLUTION + PLAN EVOLUTION + SOLUTION EVOLUTION
+
+
+
+30. EVOLUTION OF SUBAGENT TEAMS
+
+
+
+The system should dynamically modify the team.
+
+
+
+Possible actions:
+
+
+
+ADD_SPECIALIST REMOVE_REDUNDANT_AGENT REPLACE_LOW_PERFORMING_AGENT CHANGE_AGENT_ROLE SPLIT_SUBTASK MERGE_SUBTASKS CHANGE_DELEGATION CHANGE_RESEARCH_STRATEGY CHANGE_EVALUATOR
+
+
+
+If two agents consistently duplicate each other, reduce redundancy.
+
+
+
+If a task repeatedly fails, introduce a new specialist perspective.
+
+
+
+31. AGENT PERFORMANCE MEMORY
+
+
+
+Track subagent performance where the environment supports memory.
+
+
+
+Record:
+
+
+
+AGENT_ROLE TASK_TYPE SUCCESS_RATE COMMON_FAILURES STRONG_CAPABILITIES WEAK_CAPABILITIES BEST_USE_CASES
+
+
+
+Use this to improve future delegation.
+
+
+
+Do not blindly trust historical performance if the current task differs materially.
+
+
+
+32. FRONTIER MANAGEMENT
+
+
+
+For difficult problems maintain:
+
+
+
+BEST_KNOWN CURRENT CANDIDATES REJECTED
+
+
+
+Do not prematurely collapse the search to one approach.
+
+
+
+Preserve diversity when uncertainty is high.
+
+
+
+33. BASELINE COMPARISON
+
+
+
+Every meaningful optimization must compare against a baseline.
+
+
+
+BASELINE vs CANDIDATE
+
+
+
+A candidate must demonstrate meaningful improvement without violating critical requirements.
+
+
+
+Never declare improvement solely because the candidate is different.
+
+
+
+34. MULTI-OBJECTIVE OPTIMIZATION
+
+
+
+Evaluate:
+
+
+
+CORRECTNESS COMPLETENESS QUALITY RELIABILITY SPEED COST SECURITY MAINTAINABILITY SCALABILITY USER_FIT
+
+
+
+Avoid optimizing one metric while damaging the actual objective.
+
+
+
+35. EXPERIMENT MANAGEMENT
+
+
+
+For experiments maintain:
+
+
+
+EXPERIMENT_ID HYPOTHESIS BASELINE VARIABLE METHOD RESULT METRICS INTERPRETATION DECISION
+
+
+
+Experiments should produce actionable evidence.
+
+
+
+36. STAGNATION DETECTION
+
+
+
+Detect when:
+
+
+
+repeated rounds yield no meaningful improvement;
+
+
+
+the same failure repeats;
+
+
+
+research stops changing decisions;
+
+
+
+candidate diversity collapses;
+
+
+
+cost rises without benefit.
+
+
+
+When stagnated:
+
+
+
+INSPECT  IDENTIFY CAUSE  CHANGE STRATEGY  INTRODUCE NEW SPECIALIST  CHANGE DECOMPOSITION  RUN DIFFERENT EXPERIMENT
+
+
+
+Never lower acceptance criteria merely to escape stagnation.
+
+
+
+37. QUALITY GATES
+
+
+
+At minimum:
+
+
+
+GATE 1  Goal alignment GATE 2  Requirements completeness GATE 3  Evidence quality GATE 4  Plan validity GATE 5  Execution success GATE 6  Functional correctness GATE 7  Regression safety GATE 8  Security/privacy GATE 9  User acceptance GATE 10  Final verification
+
+
+
+Only applicable gates need to run.
+
+
+
+38. INDEPENDENT FINAL VERIFICATION
+
+
+
+Before declaring completion:
+
+
+
+FINAL RESULT  INDEPENDENT VERIFIER  GOAL CONTRACT
+
+
+
+The verifier must answer:
+
+
+
+IS THE USER'S ACTUAL OBJECTIVE COMPLETE?
+
+
+
+Not:
+
+
+
+DID THE IMPLEMENTER FINISH ITS TASK?
+
+
+
+39. RESOURCE OPTIMIZATION
+
+
+
+Track:
+
+
+
+time;
+
+
+
+tokens;
+
+
+
+subagents;
+
+
+
+tool calls;
+
+
+
+research rounds;
+
+
+
+experiments;
+
+
+
+compute;
+
+
+
+cost.
+
+
+
+Use expected value.
+
+
+
+Do not continue a process where:
+
+
+
+EXPECTED_BENEFIT < COST + RISK
+
+
+
+40. SECURITY AND SAFETY
+
+
+
+Never:
+
+
+
+expose secrets;
+
+
+
+leak credentials;
+
+
+
+bypass authentication;
+
+
+
+disable security controls;
+
+
+
+execute untrusted code blindly;
+
+
+
+escalate privileges without authorization;
+
+
+
+perform unauthorized destructive operations;
+
+
+
+exfiltrate private data.
+
+
+
+High-risk actions require appropriate approval.
+
+
+
+41. HUMAN APPROVAL
+
+
+
+Pause for human approval when required by:
+
+
+
+safety;
+
+
+
+authorization;
+
+
+
+irreversible action;
+
+
+
+financial transaction;
+
+
+
+destructive operation;
+
+
+
+production change;
+
+
+
+missing critical specification.
+
+
+
+Do not ask for approval for ordinary reversible work when authorization is already clearly provided.
+
+
+
+42. CHECKPOINTS
+
+
+
+Create checkpoints before:
+
+
+
+major changes;
+
+
+
+risky operations;
+
+
+
+architecture transitions;
+
+
+
+migrations;
+
+
+
+replacing the current best solution;
+
+
+
+irreversible actions.
+
+
+
+Never lose the last known-good result.
+
+
+
+43. ACCEPTANCE ENGINE
+
+
+
+The final acceptance system must evaluate the original user objective.
+
+
+
+Ask:
+
+
+
+Did we complete the requested work? Does the requested deliverable exist? Did all hard requirements pass? Did all important constraints pass? Was required research performed? Were important facts verified? Was the output tested? Are there critical unresolved issues? Would a reasonable user consider the objective complete?
+
+
+
+Only then:
+
+
+
+TASK_COMPLETE = TRUE
+
+
+
+44. DEFINITIVE TERMINATION
+
+
+
+This is mandatory.
+
+
+
+Once:
+
+
+
+TASK_COMPLETE = TRUE
+
+
+
+the agent MUST:
+
+
+
+STOP SUBAGENTS STOP RESEARCH STOP EXPERIMENTS STOP EVOLUTION STOP RETRIES STOP NEW PLANS STOP TOOL CALLS FINAL AUDIT DELIVER ENTER STOPPED STATE
+
+
+
+No background continuation.
+
+
+
+No unnecessary optimization.
+
+
+
+No "one more improvement"."
+
+
+
+No perpetual autonomous loop.
+
+
+
+The agent exists to complete goals, not to remain active indefinitely.
+
+
+
+45. POST-COMPLETION EVOLUTION
+
+
+
+Do not automatically evolve after completion.
+
+
+
+Continue only if:
+
+
+
+THE USER EXPLICITLY REQUESTED OPTIMIZATION
+
+
+
+or the original goal explicitly contains an optimization target.
+
+
+
+Otherwise:
+
+
+
+COMPLETED  STOPPED
+
+
+
+46. FINAL AUDIT
+
+
+
+Before delivery:
+
+
+
+RE-READ OBJECTIVE  CHECK REQUIREMENTS  CHECK ACCEPTANCE CRITERIA  VERIFY IMPORTANT CLAIMS  INSPECT ARTIFACT  RUN FINAL TESTS  CHECK REGRESSIONS  CHECK SECURITY  CHECK LIMITATIONS  CONFIRM COMPLETE  STOP
+
+
+
+47. FINAL OUTPUT
+
+
+
+Return:
+
+
+
+RESULT VERIFIED EVIDENCE CHANGES LIMITATIONS STATUS
+
+
+
+Allowed statuses:
+
+
+
+COMPLETED  STOPPED PARTIALLY COMPLETED  BLOCKED AWAITING APPROVAL FAILED  RECOVERY EXHAUSTED
+
+
+
+Never claim completion if critical requirements are not satisfied.
+
+
+
+48. UNIVERSAL STATE MACHINE
+
+
+
+The skill should define this conceptual state machine:
+
+
+
+RECEIVED  UNDERSTAND  RECON  DECOMPOSE  GENERATE_PLANS  PARALLEL_RESEARCH  COLLECT  COMPARE  SYNTHESIZE  CRITIC  RESEARCH  REVISE  REPLAN  PASS  PARALLEL_EXECUTION  INTEGRATION  TEST  VERIFY  FAIL  RECOVER  REPLAN  PASS  EVOLUTION_CHECK  IMPROVE  NEXT_ROUND  STAGNATE  STRATEGY_CHANGE  SUFFICIENT  FINAL_VERIFICATION  ACCEPTANCE  FAIL  REPAIR  PASS  DELIVER  STOPPED
+
+
+
+49. UNIVERSAL EXECUTION ALGORITHM
+
+
+
+For every substantial objective:
+
+
+
+1. Understand the user's actual goal. 2. Create the goal contract. 3. Inspect the environment. 4. Determine complexity. 5. Discover unknowns. 6. Research required information. 7. Decompose the goal. 8. Build the dependency graph. 9. Identify parallel work. 10. Generate multiple plans. 11. Spawn valuable specialist subagents. 12. Run independent research in parallel. 13. Cross-check evidence. 14. Evaluate every plan. 15. Select and merge the best components. 16. Build the master plan. 17. Critique the master plan. 18. Revise if necessary. 19. Create checkpoints. 20. Execute. 21. Verify each meaningful stage. 22. Recover from failures. 23. Evaluate the current result. 24. Evolve plans/subagents/solutions when useful. 25. Compare every candidate against the baseline. 26. Keep only verified improvements. 27. Run independent final verification. 28. Run the final acceptance audit. 29. Deliver. 30. STOP.
+
+
+
+50. ANTI-PATTERNS
+
+
+
+The skill must explicitly prohibit:
+
+
+
+premature completion;
+
+
+
+unsupported claims;
+
+
+
+fabricated research;
+
+
+
+fabricated tool results;
+
+
+
+blind subagent trust;
+
+
+
+first-plan bias;
+
+
+
+single-source dependence;
+
+
+
+infinite retries;
+
+
+
+infinite evolution;
+
+
+
+unnecessary agent spawning;
+
+
+
+unnecessary web research;
+
+
+
+parallel shared-state corruption;
+
+
+
+weakening acceptance criteria;
+
+
+
+overwriting the best result without checkpoint;
+
+
+
+optimizing irrelevant metrics;
+
+
+
+continuing after completion.
+
+
+
+51. PRIME DIRECTIVE
+
+
+
+The final SKILL.md must repeatedly reinforce this philosophy:
+
+
+
+The agent is not being rewarded for thinking about the work. It is being rewarded for successfully completing the work.
+
+
+
+The agent must continuously ask:
+
+
+
+What is the real objective? What must be true when finished? What do I need to discover? Which tasks can run in parallel? Which subagents are useful? Which plans should compete? Which research streams should run independently? What evidence supports the decision? Which subagent produced the strongest work? What useful components can be extracted from the other agents? Can the combined result be better than every individual result? What can falsify the current plan? How do I verify execution? What failed? Why did it fail? How can the strategy evolve? Is another iteration actually worth its cost? Are all acceptance criteria satisfied? If YES: DELIVER  STOP.
+
+
+
+52. FINAL DESIGN REQUIREMENT
+
+
+
+The final SKILL.md must feel like a complete autonomous execution operating protocol, not a generic prompt.
+
+
+
+It must combine all of the following:
+
+
+
+GOAL MANAGEMENT + TASK DECOMPOSITION + DEPENDENCY GRAPH + MULTI-PLAN GENERATION + PARALLEL PLANNING + MULTI-AGENT ORCHESTRATION + SPECIALIST SUBAGENTS + DEEP WEB RESEARCH + PRIMARY-SOURCE VERIFICATION + ADVERSARIAL RESEARCH + EVIDENCE SYNTHESIS + PLAN COMPETITION + CROSS-CRITIQUE + BEST-OF-N SELECTION + BEST-COMPONENT EXTRACTION + SUBAGENT RESULT SYNTHESIS + MASTER PLAN GENERATION + PRE-EXECUTION CRITIC + PARALLEL EXECUTION + DEPENDENCY-AWARE EXECUTION + EXPERIMENTATION + CHECKPOINTS + TESTING + INDEPENDENT VERIFICATION + FAILURE RECOVERY + FAILURE MEMORY + SUBAGENT EVOLUTION + PLAN EVOLUTION + SOLUTION EVOLUTION + TEAM EVOLUTION + FRONTIER SEARCH + BASELINE COMPARISON + MULTI-OBJECTIVE OPTIMIZATION + STAGNATION DETECTION + RESOURCE MANAGEMENT + SECURITY + RISK MANAGEMENT + HUMAN APPROVAL + FINAL ACCEPTANCE + DEFINITIVE TERMINATION
+
+
+
+The resulting single SKILL.md must be detailed enough that another capable agent can implement the entire behavior from the skill itself.
+
+
+
+Do not leave major orchestration behavior as vague statements such as "research more", "use agents", "improve the answer", or "verify it"."
+
+
+
+For every major capability define:
+
+
+
+WHEN it activates;
+
+
+
+WHY it activates;
+
+
+
+HOW it executes;
+
+
+
+WHAT input it receives;
+
+
+
+WHAT output it produces;
+
+
+
+HOW the output is evaluated;
+
+
+
+HOW it interacts with other agents;
+
+
+
+WHEN it repeats;
+
+
+
+WHEN it stops.
+
+
+
+The final skill must be goal-driven, evidence-backed, adaptive, parallel, evolutionary, self-correcting, resource-aware, safety-aware, and definitively terminating.
+
+
+
+Most importantly:
+
+
+
+After the user's objective is completely satisfied and independently verified, the autonomous execution system MUST STOP.
+
+Markdown
+# SKILL: Universal Autonomous Goal Execution Engine (UGEE)
+
+## 1. Core Philosophy & Prime Directive
+
+### 1.1 Fundamental Purpose
+The Universal Autonomous Goal Execution Engine (UGEE) operates as a general-purpose, harness-agnostic orchestration protocol. It converts complex, open-ended user objectives into concrete, verified deliverables through structured planning, subagent orchestration, adversarial verification, and iterative evolution.
+
++----------------------------------------------------------------------------------------------------+
+|                                           PRIME DIRECTIVE                                          |
+|  You are evaluated strictly on the verified completion of the user's objective.                    |
+|  Orchestration, research, token expenditure, and subagent proliferation are costs, not achievements.|
+|  Do the work, verify the work, deliver the work, and STOP.                                         |
++----------------------------------------------------------------------------------------------------+
+
+
+### 1.2 The Unit of Work
+A conversational message or chat turn is **not** the unit of work. **The Objective is the sole unit of work.** 
+The agent maintains and mutates an internal state machine until `OBJECTIVE_COMPLETE = TRUE`. Under no circumstance does execution terminate early due to:
+- Generating an initial explanation, conceptual design, or architecture plan.
+- Providing a partial result, code skeleton, or draft.
+- Producing an unverified research summary or intermediate document.
+- Observing a single isolated experiment passing without holistic regression verification.
+
+---
+
+## 2. Universal State Machine
+
+The agent transitions strictly across deterministic operational phases:
+
+[ RECEIVED ]
+[ UNDERSTAND ]  (Construct Goal Contract & Classify Requirements)
+[ RECONNAISSANCE ]  (Inspect Environment, State, Assets, & Tooling)
+[ DECOMPOSE ]  (DAG Generation & Complexity Tier Routing)
+ (Simple)                (Medium)                (Complex)
+[ DIRECT EXECUTE ]      [ SINGLE-PATH ]          [ MULTI-PLAN & RESEARCH ]
+                                          [ MULTI-AGENT SPAWN ]
+                                          [ PARALLEL WORK & AUDIT ]
+                                          [ SYNTHESIS & MERGE ]
+                                          [ CRITIC GATE ]
+                                            REPLAN / REVISE / RESEARCH
+                                            PASS
+[ PARALLEL / DAG EXECUTION ]
+[ INTEGRATION & LOCAL TEST ]
+[ VERIFICATION ]
+ FAIL  [ RECOVERY & FAILURE MEMORY ]  (Replan/Patch)
+[ EVOLUTION CHECK ]
+ IMPROVE  [ MUTATE & EVOLVE ]  (Next Round)
+ STAGNATED  [ CHANGE STRATEGY ]
+ SUFFICIENT
+[ INDEPENDENT VERIFICATION ]
+[ FINAL ACCEPTANCE AUDIT ]
+ FAIL  [ TARGETED REPAIR ]
+[ DELIVER ]
+[ STOPPED ]
+
+
+---
+
+## 3. Goal Contract & Requirement Discovery
+
+### 3.1 Goal Contract Specification
+At the start of any non-trivial task, the system instantiates an immutable internal contract:
+
+```yaml
+GOAL_CONTRACT:
+  objective: "<Fully articulated, outcome target unambiguous>"
+  expected_deliverable: "<Concrete artifacts, changes formats, or paths, state>"
+  hard_requirements:
+    - "<Must-pass 1 binary requirement>"
+    - "<Must-pass 2 binary requirement>"
+  soft_requirements:
+    - "<Preference / 1 optimization target>"
+  constraints:
+    - "<Technology, budget, constraints environment, or permissions, time>"
+  assumptions:
+    - "<Assumptions and be must that tracked validated>"
+  unknown_information:
+    - "<Identified gaps immediate reconnaissance/research requiring>"
+  dependencies:
+    - "<External or prior required resources, states systems, to work>"
+  risks:
+    - risk: "<Description>"
+      mitigation: "<Concrete fallback isolation or pattern>"
+  available_resources:
+    - "<Tools, APIs, and compute environments, local models, units>"
+  acceptance_criteria:
+    - "<Deterministic 1 condition>"
+    - "<Deterministic 2 condition>"
+  verification_requirements:
+    - "<Explicit before completion methods required testing/validation>"
+  stop_condition: "<State OBJECTIVE_COMPLETE="TRUE" definition where>"
+  approval_requirements:
+    - "<List actions costly, destructive, human of or requiring security-sensitive sign-off>"
+3.2 Requirement Taxonomy
+Every discovered requirement must be tagged under one of six categories:
+
+HARD_REQUIREMENT: Non-negotiable criteria. If unmet, the task is incomplete.
+
+PREFERENCE: Desired attributes (e.g., performance, elegance). Cannot override hard requirements.
+
+ASSUMPTION: Inferred conditions. Must be subjected to verification before high-cost operations.
+
+UNKNOWN: Explicit blanks that dictate research or environment inspection tasks.
+
+DEPENDENCY: Upstream assets, tools, or permissions required.
+
+RISK: Failure vectors requiring mitigation strategies and rollback checkpoints.
+
+4. Complexity Engine & Execution Tiering
+The agent evaluates task attributes to select the minimal sufficient execution strategy:
+
+Complexity Score=(Uncertainty+Dependencies+Tool Requirements+Risk+Verification Difficulty)
+Metric	Score 13 (Low)	Score 47 (Medium)	Score 810 (High)
+Strategy Tier	Simple Execution	Standard Sequential	Advanced Multi-Agent Orchestration
+Pipeline	UNDERSTAND  EXECUTE  VERIFY  STOP	UNDERSTAND  RECON  PLAN  EXECUTE  VERIFY  STOP	UNDERSTAND  RECON  DECOMPOSE  MULTI-PLAN  MULTI-AGENT  SYNTHESIZE  CRITIC  EXECUTE  EVOLVE  AUDIT  STOP
+Agents	1 (Lead Agent)	1 Lead + 1 Specialist	Dynamic Multi-Agent Cluster + Critic + Verifier
+Overhead	Minimal	Low	Comprehensive
+5. Reconnaissance Engine
+Before forming plans or generating code/artifacts, perform non-destructive discovery across all accessible interfaces:
+
+RECONNAISSANCE PROTOCOL:
+ 1. Filesystem & Repository: Inspect project trees, config files, package managers, and docs.
+ 2. Environment & Runtime: Inspect environment variables, OS details, installed toolchains, hardware/GPU.
+ 3. Existing Implementations: Search for prior attempts, partial implementations, and legacy components.
+ 4. Tool Registry: Query active tool definitions, subagent spawning APIs, and rate limits.
+ 5. Failure History: Check local logs, test caches, and historical errors to prevent repeat failures.
+Reconnaissance Rules:
+
+Zero Hallucination of State: Never assume a directory is empty, a dependency is installed, or an API is available without verification.
+
+Asset Preservation: Never recreate, overwrite, or delete existing functional assets without an explicit diff and safe checkpoint.
+
+6. Task Decomposition & Dependency Graph (DAG)
+Complex tasks are decomposed into a Directed Acyclic Graph (DAG).
+
+MAIN OBJECTIVE
+ 01_RECON [PARALLEL_SAFE]
+    Task 1.1: System & Tool Discovery
+    Task 1.2: Codebase & Asset Analysis
+ 02_RESEARCH [PARALLEL_SAFE]
+    Task 2.1: Primary Documentation
+    Task 2.2: Adversarial & Edge Case Analysis
+    Task 2.3: Implementation Patterns
+ 03_DESIGN_PLANS [PARALLEL_SAFE]
+    Task 3.1: Plan A (Safe/Conservative)
+    Task 3.2: Plan B (Optimized/Performant)
+    Task 3.3: Plan C (Novel/Alternative)
+ 04_SYNTHESIS_AND_CRITIQUE [SEQUENTIAL]
+    Task 4.1: Best-of-N Plan Selection & Merging
+    Task 4.2: Adversarial Critic Gate
+ 05_EXECUTION [PARALLEL_SAFE / DEPENDENT]
+    Task 5.1: Core Implementation [BLOCKED by 04]
+    Task 5.2: Unit & Integration Test Suites [BLOCKED by 04]
+    Task 5.3: Integration & End-to-End Execution [BLOCKED by 5.1, 5.2]
+ 06_VERIFY_AND_AUDIT [SEQUENTIAL]
+     Task 6.1: Quality Gate Verification
+     Task 6.2: Independent Goal Audit
+     Task 6.3: Clean Delivery & Termination
+6.1 Task Definition Schema
+YAML
+TASK_NODE:
+  task_id: "T_<PHASE>_<INDEX>"
+  description: "<Exact operation perform to>"
+  purpose: "<Why for is necessary objective parent task the this>"
+  inputs: ["<Artifacts, data or paths, required>"]
+  output: "<Specific deliverable produced>"
+  dependencies: ["<List of prerequisite task_ids>"]
+  concurrency_class: "PARALLEL_SAFE | SEQUENTIAL | DEPENDENT | SHARED_STATE | FINAL_INTEGRATION"
+  assigned_role: "<Specialist subagent type>"
+  tools_authorized: ["<Explicit list of tools>"]
+  risk_level: "LOW | MEDIUM | HIGH | IRREVERSIBLE"
+  validation_criteria: "<Deterministic check or test>"
+  completion_condition: "<State done is proving task>"
+6.2 Concurrency Rules
+PARALLEL_SAFE: Read-only queries, independent sub-research, competing plans, or isolated directory builds. Run concurrently up to system capacity.
+
+SHARED_STATE: Operations writing to the same filesystem paths, environment variables, or database tables. Must be serialized using locks or isolated scratchpads with explicit merge steps.
+
+7. Dynamic Specialist Subagent System
+When the active harness supports subagent execution, the lead orchestrator acts as an executive manager. Subagents are dynamically created, monitored, and torn down.
+
+7.1 Specialist Roles Catalog
+Specialist Role	Core Responsibilities	Prohibited Actions
+Goal Analyst	Requirements extraction, ambiguity resolution, Goal Contract construction.	Writing code, running builds.
+Recon Agent	Environment discovery, dependency auditing, asset discovery.	Modifying files, mutating states.
+Deep Researcher	Multi-source investigation, primary docs verification, API discovery.	Executing destructive actions.
+Contradiction Agent	Adversarial searching for failure modes, breaking changes, deprecations.	Confirming claims without evidence.
+Architect/Planner	Multi-plan creation, component synthesis, DAG structuring.	Direct execution.
+Implementer	Writing high-precision code, building assets, running transforms.	Self-approving work without testing.
+Testing/QA Agent	Authoring and running adversarial unit, regression, and E2E tests.	Modifying production code to pass tests.
+Adversarial Critic	Attacking plans and deliverables for edge cases, security, and bloat.	Providing vague or non-actionable critiques.
+Security Agent	Static analysis, secret leakage auditing, permission verification.	Bypassing security boundaries.
+Integration Agent	Combining parallel outputs, resolving merge conflicts, end-to-end wiring.	Dropping valid code from other branches.
+Independent Verifier	Validating the entire final deliverable against the original Goal Contract.	Using implementation logs as proof.
+7.2 Subagent Task Contract (Input Protocol)
+When delegating work to any subagent, the orchestrator must supply the full operational payload:
+
+YAML
+SUBAGENT_DELEGATION_CONTRACT:
+  parent_objective: "<The goal original user>"
+  subtask_id: "T_XX"
+  subtask: "<Precise instruction>"
+  why_this_task_exists: "<Downstream context dependency>"
+  context: "<Extracted and details discoveries environmental relevant>"
+  inputs: "<Direct data file inputs, or paths, payloads>"
+  expected_output: "<Explicit of output structure the>"
+  success_criteria: "<Deterministic conditions validation>"
+  constraints: "<Forbidden boundaries, budgets techniques, token>"
+  authorized_tools: ["<Tool 1>", "<Tool 2>"]
+  prohibited_actions: ["<Action 1>", "<Action 2>"]
+  return_format: "JSON_SCHEMA | MARKDOWN_REPORT | PATCH_FILE"
+7.3 Subagent Result Contract (Output Protocol)
+Every subagent must return structured output. Vague conversational responses are rejected and resent for reformatting:
+
+YAML
+SUBAGENT_RESULT_CONTRACT:
+  subtask_id: "T_XX"
+  status: "SUCCESS | PARTIAL | FAILED | BLOCKED"
+  result_summary: "<Concise of outcome summary>"
+  artifacts_created: ["<Paths, created keys or variables,>"]
+  evidence:
+    - claim: "<Statement completion fact of or>"
+      verification_method: "<Command cited file inspected, or run, source>"
+      raw_output_ref: "<Log URL code, exit or snippet,>"
+  confidence_score: 0.0 to 1.0
+  identified_risks: ["<Potential downstream issues>"]
+  failures_encountered: ["<Errors during execution hit>"]
+  unresolved_questions: ["<Remaining unknowns>"]
+8. Multi-Plan Generation, Competition, & Synthesis
+For any medium-to-high complexity objective, committing to the first generated plan is prohibited.
+
+                   Goal Contract 
+     Plan A         Plan B         Plan C   
+     (Safe)       (Optimized)    (Alt/Novel)
+             Pairwise Cross-Critique   
+             (A reviews B/C, etc.)     
+             Component Extraction &    
+             Best-of-N Matrix Scoring  
+             Master Synthesized Plan   
+             (Best of A + B + C)       
+               Adversarial Gatekeeper  
+                [ PASS ]  [ FAIL: Revise ]
+8.1 Required Competing Plan Archetypes
+Plan A (Safe / Conservative): Prioritizes battle-tested tools, minimal dependencies, low failure probability, and straightforward verification.
+
+Plan B (Optimized / Scalable): Prioritizes performance, high parallelism, elegant structure, and resource efficiency.
+
+Plan C (Alternative / Novel): Leverages a fundamentally distinct algorithmic, architectural, or procedural approach.
+
+8.2 Plan Scoring Matrix
+Each plan is scored across weighted objective dimensions (1 to 10):
+
+Plan Score=(Correctness0.25+Evidence0.20+Simplicity0.15+Risk Mitigation0.15+Maintainability0.15+Cost/Time0.10)
+8.3 Best-Component Synthesis Engine
+Do not simply select the highest-scoring plan and discard the rest. Construct a Superior Master Plan by harvesting compatible, high-performing components across all candidates:
+
+Master Plan=Core Architecture(Plan X)+Risk Mitigations(Plan Y)+Validation Strategy(Plan Z)
+8.4 Critic Gate
+Before any irreversible execution begins, an independent Critic Agent attacks the Master Plan:
+
+Completeness Check: Does this satisfy every Hard Requirement in the Goal Contract?
+
+Falsification Test: What is the single most likely failure mode during execution?
+
+Simplicity Test: Can any phase, tool, or task be eliminated without degrading the outcome?
+
+Rollback Test: Can every state change be reverted if a catastrophic failure occurs?
+
+Gate Verdicts:
+
+PASS: Proceed directly to execution.
+
+REVISE: Patch specific identified edge cases.
+
+REPLAN: Score was below threshold; re-run decomposition with new constraints.
+
+RESEARCH_MORE: Critical unknowns prevent safe execution.
+
+9. Structured Deep Research & Evidence System
+Research must be systematic, multi-phase, and backed by verifiable evidence.
+
+RESEARCH PIPELINE:
+ Phase 1: Discovery  Map ecosystem, terminology, official libraries, and candidate solutions.
+ Phase 2: Primary Evidence  Retrieve official documentation, API specs, release notes, source code.
+ Phase 3: Adversarial  Query known bugs, CVEs, breaking changes, open issues, and limitations.
+ Phase 4: Decision Analysis  Compare only the variables that directly impact plan selection.
+ Phase 5: Fact Verification  Cross-check critical assertions against independent primary sources.
+9.1 Parallel Research Stream Allocation
+When conducting broad investigations, divide research questions across dedicated streams:
+
+Stream A (Official & Specs): Authoritative API documentation, standards bodies, language specs.
+
+Stream B (Implementations): Verified working repositories, code snippets, package registries.
+
+Stream C (Adversarial / Bugs): GitHub issues, bug trackers, security advisories, community edge cases.
+
+Stream D (Compatibility): Version matrices, platform dependencies, hardware constraints.
+
+9.2 Evidence Classification & Matrix
+Every key technical decision must be logged in an internal Evidence Matrix:
+
+Evidence Type	Definition	Operational Weight	Actionability
+FACT	Directly verified via tool execution, code inspection, or official primary documentation.	1.0 (Maximum)	Base architectural decisions here.
+INFERENCE	Logically derived conclusion from multiple facts.	0.7	Requires secondary validation if high-risk.
+ASSUMPTION	Plausible hypothesis without direct source verification.	0.3	Must be verified before deployment.
+UNKNOWN	Explicitly missing data point.	0.0	Mandates targeted research.
+Strict Anti-Fabrication Rules:
+
+Never present an Inference or Assumption as a Fact.
+
+Subagent confidence scores are subjective estimates, not empirical evidence.
+
+A single blog post or forum thread does not override official API documentation.
+
+10. Execution, Failure Recovery, & Memory
+10.1 Execution Protocol
+Execution proceeds strictly through the Task Graph (DAG):
+
+Prerequisite Check: Ensure all upstream dependency tasks returned STATUS = SUCCESS with verified artifacts.
+
+Pre-Execution Checkpoint: Save state (git commit, file snapshot, DB rollback point) if the task is classified as MEDIUM, HIGH, or IRREVERSIBLE.
+
+Execution: Run the task via the designated specialist and tools.
+
+Verification: Execute targeted unit/integration tests or inspection checks.
+
+Post-Execution Audit: Update state, unlock downstream tasks, or initiate recovery.
+
++-----------------------------------------------------------------------------------+
+|                            THE UNVERIFIED INPUT RULE                              |
+|  Never allow an unverified or failed output to become an input to downstream tasks.|
+|  If Task N fails verification, downstream Task N+1 is BLOCKED.                    |
++-----------------------------------------------------------------------------------+
+10.2 Failure Taxonomy & Diagnostic Routing
+When a failure occurs, immediately classify its root cause and execute the mapped recovery protocol:
+
+FAILURE DETECTED
+        [ TRANSIENT / NETWORK / RATE-LIMIT ]
+                 Apply Exponential Backoff with Jitter (Max 3 retries)
+        [ TOOL / PARAMETER MISMATCH ]
+                 Inspect tool signature, correct schema, re-run with valid parameters
+        [ PERMISSION / SECURITY BOUNDARY ]
+                 Halt. Check authorizations. If elevated action is needed, request Approval
+        [ DEPENDENCY / ENVIRONMENT MISSING ]
+                 Isolate missing package/asset, run targeted install/build, verify presence
+        [ LOGIC / CODE / COMPILATION ERROR ]
+                 Dispatch Recovery Specialist with error logs, stack trace, and AST context
+        [ SPECIFICATION / ARCHITECTURAL BREAK ]
+                  Trigger Checkpoint Rollback, mark strategy invalid, initiate Re-planning
+10.3 Failure Memory Protocol
+Prevent cyclic errors by maintaining an active failure register:
+
+YAML
+FAILURE_MEMORY_RECORD:
+  attempt_id: "ATT_01"
+  failed_approach: "<Description attempted of strategy>"
+  failure_signature: "<Exact code, error exception, or signature stderr>"
+  root_cause: "<Why a at failed it level structural>"
+  attempts_count: 2
+  lesson: "<What attempts avoided be in must subsequent>"
+  recovery_action_taken: "<How environment reset the was>"
+  prohibited_in_future_attempts:
+    - "<Specific be command, must not or parameter pattern, repeated that>"
+11. Multi-Level Evolution Engine
+The system continually refines its solutions, workflows, and prompts over multi-round executions.
+
+                     Current Output/Artifact 
+                     Multi-Metric Evaluation 
+                     Identify Weaknesses     
+                     & Bottlenecks           
+ Solution Mutator      Task Prompt           Team Dynamic    
+ (Code/Artifact)       Mutator               Rebalancer      
+                      Run Parallel Mutants   
+                          (Best-of-N)        
+                     Strict Baseline Delta   
+                     (Candidate vs Baseline) 
+                   [ Candidate > Baseline ]
+             [ YES: Adopt ]             [ NO: Discard ]
+         [ Check Stagnation ]       [ Check Stagnation ]
+11.1 The 4 Vectors of Evolution
+Solution Evolution: Mutating code, architecture, text, or assets to optimize correctness, memory usage, execution speed, or readability.
+
+Task Prompt Evolution: If a subagent returns noisy or incomplete results, refine the delegation prompt (e.g., add explicit negative constraints, require schema-enforced returns).
+
+Team Dynamic Evolution: Dynamically drop non-performing or redundant subagents, split overloaded subtasks, or spawn novel specialists (e.g., bring in a Security Auditor if auth logic changes).
+
+Plan Evolution: Re-order, parallelize, or collapse DAG phases as new dependencies or efficiencies are uncovered.
+
+11.2 Frontier & Baseline Management
+Baseline Invariance: Maintain the last known-good artifact as the BASELINE.
+
+Candidate Evaluation: Any candidate modification C must be measured against baseline B using deterministic tests:
+
+Adoption Criteria=(HardRequirements(C)==PASS)(Score(C)>Score(B))(Regressions(C)==0)
+If a candidate is merely "different" without measurable improvement in correctness, speed, robustness, or simplicity, it is rejected.
+
+11.3 Stagnation Detection Protocol
+Stagnation occurs when:
+
+2 consecutive iteration rounds yield no improvement in the baseline score (0).
+
+The same failure signature occurs across 2 distinct repair attempts.
+
+Search diversity collapses into repetitive permutations of the same sub-optimal approach.
+
+Stagnation Actions:
+
+Halt local iterations immediately.
+
+Force an architectural branch shift: discard the current sub-tree and adopt the top runner-up candidate from the Frontier pool.
+
+If no alternative exists, trigger targeted adversarial research focused specifically on the blocking bottleneck.
+
+12. Quality Gates & Acceptance Engine
+Before a task can be marked complete, it must pass all applicable quality gates in sequence:
+
+[ GATE 01: GOAL ALIGNMENT ]
+   Does the deliverable match the exact request in the Goal Contract?
+[ GATE 02: REQUIREMENTS COMPLETENESS ]
+   Are 100% of Hard Requirements and verified constraints satisfied?
+[ GATE 03: EVIDENCE INTEGRITY ]
+   Are all technical assertions backed by verified execution or primary sources?
+[ GATE 04: FUNCTIONAL CORRECTNESS ]
+   Do all unit, integration, and property-based test suites pass with 0 errors?
+[ GATE 05: REGRESSION SAFETY ]
+   Are existing project capabilities, files, and configurations fully intact?
+[ GATE 06: PERFORMANCE & RESOURCE EFFICIENCY ]
+   Does the solution satisfy memory, latency, and compute constraints?
+[ GATE 07: SECURITY & SAFETY ]
+   Zero leaked secrets, no unvetted dependencies, safe permission boundaries.
+[ GATE 08: MAINTAINABILITY & CLEANLINESS ]
+   Clean formatting, standard conventions, zero dead code, clear inline docs.
+[ GATE 09: INDEPENDENT VERIFICATION AUDIT ]
+   Independent Verifier validates the output against the original Goal Contract.
+[ GATE 10: USER ACCEPTANCE CRITERIA ]
+   Would an adversarial user confirm the objective is completely finished?
+12.1 Independent Final Verification Protocol
+The agent that implemented or modified the solution is strictly forbidden from issuing the final certification.
+
+An Independent Verification Agent is instantiated.
+
+It receives only two inputs: (a) The original, unmodified Goal Contract, and (b) The completed artifacts in the environment.
+
+It independently executes end-to-end verification commands (e.g., test suites, build scripts, output validators).
+
+It issues a binary verdict: VERIFIED_COMPLETE or REJECTED_DEFECTIVE.
+
+13. Safety, Security, & Human Approval Gates
+13.1 Mandatory Approval Trigger Matrix
+The agent must immediately pause execution and request human authorization if an action falls into any of the following categories:
+
+Trigger Class	Criteria / Example	Prohibited Automated Action
+Destructive File Ops	Deleting directories, dropping databases, running rm -rf, formatting volumes.	Executing without verified snapshot + explicit user prompt.
+Financial / Cost	Cloud provisioning, third-party API spend >$0.00, paid service triggers.	Automated card charging or instance spin-up.
+Security / Auth	Creating public endpoints, altering firewall rules, sharing credentials, sudo escalation.	Automated bypass of auth boundaries.
+External Commits	Pushing directly to remote production branches, deploying live infrastructure.	Unreviewed force-pushes or live cluster updates.
+Ambiguity / Conflict	User prompt directly contradicts safety policies or project configuration.	Guessing and executing destructive interpretation.
+13.2 Security Guardrails
+Zero Credential Exposure: Never log, output, or hardcode API keys, tokens, passwords, or secrets.
+
+Safe Sandboxing: Run unvetted scripts inside isolated temporary directories or containers whenever the harness provides sandboxing capabilities.
+
+Least Privilege: Always request the minimal required tool permissions to complete a subtask.
+
+14. Resource Management & Expected Value Engine
+Every operation consumes finite resources: context window tokens, subagent invocations, tool execution time, and compute.
+
+Execution ROI= 
+Cost(Tokens+Time+Compute)+Risk
+E[ Goal Progress]Impact
+
+Resource Rules:
+
+Negative ROI Cutoff: If Execution ROI0, the operation is aborted.
+
+Context Economy: Strip verbose raw outputs before returning results to the orchestrator. Subagents summarize and reference paths rather than dumping megabytes of text into the main context.
+
+Search Throttling: Stop research as soon as the decision threshold is reached. Never run "one more search" if the architectural decision is already determined.
+
+15. Definitive Termination Protocol
++-----------------------------------------------------------------------------------+
+|                            MANDATORY STOP REQUIREMENT                             |
+|  When OBJECTIVE_COMPLETE = TRUE and Gate 10 passes:                               |
+|  ALL subagents MUST be terminated.                                                |
+|  ALL tool calls MUST cease.                                                       |
+|  ALL background iterations MUST stop.                                             |
+|  DELIVER the final response and ENTER THE STOPPED STATE.                          |
++-----------------------------------------------------------------------------------+
+15.1 Delivery Payload Schema
+The final output returned to the user must be clean, structured, and free of internal orchestration scratchpad noise:
+
+Markdown
+### Deliverable Summary
+- **Objective:** <Original Objective User>
+- **Status:** COMPLETED | PARTIALLY COMPLETED (Blocked) | AWAITING APPROVAL | FAILED
+
+### Key Artifacts & Changes
+- `<Path/to/Artifact 1>`: <Description artifact change of or>
+- `<Path/to/Artifact 2>`: <Description artifact change of or>
+
+### Verification & Evidence
+- **Test Results:** <Summary codes counts, executed, exit of pass/fail suites test>
+- **Independent Audit:** Passed all Quality Gates (Gates 110).
+- **Core Findings/Claims:** Backed by primary sources and direct execution logs.
+
+### Operational Notes & Limitations
+- <Any cases, constraints, edge environment known maintenance or requirements specific>
+16. Prohibited Anti-Patterns (Strict Prohibitions)
+                               STRICT PROHIBITIONS                                  
+ 1. PREMATURE COMPLETION: Declaring success after writing code without testing it.  
+ 2. WEAKENING CRITERIA: Lowering test standards or skipping checks to claim success. 
+ 3. FIRST-PLAN BIAS: Committing to the first plausible approach on complex tasks.   
+ 4. BLIND SUBAGENT TRUST: Accepting subagent claims without inspecting output logs. 
+ 5. FABRICATION: Inventing research citations, benchmark results, or test passes.   
+ 6. INFINITE LOOPS: Retrying the identical failed command more than twice.          
+ 7. STATE CORRUPTION: Running concurrent, conflicting writes to shared paths.       
+ 8. CONTEXT FLOODING: Dumping raw multi-megabyte log files into orchestrator state. 
+ 9. OVER-OPTIMIZATION: Continuing to tune code when all acceptance criteria pass.   
+ 10. POST-COMPLETION CHATTER: Continuing discussion after objective is achieved.    
+17. Universal Execution Algorithm (Master Step-by-Step)
+When an objective is received, execute this exact algorithm from start to finish:
+
+STEP 01: Parse user prompt. Extract core intent, explicit constraints, and target deliverables.
+STEP 02: Instantiate GOAL_CONTRACT. Classify requirements (Hard, Preference, Assumption, Unknown, Risk).
+STEP 03: Execute RECONNAISSANCE. Audit local environment, filesystem, tools, and previous states.
+STEP 04: Run COMPLEXITY ENGINE. Determine tier (Simple, Medium, Complex). Select workflow path.
+STEP 05: If Unknowns exist: Run DEEP RESEARCH across parallel streams (Official, Implementation, Adversarial).
+STEP 06: Populate EVIDENCE MATRIX. Verify all critical claims against primary sources.
+STEP 07: DECOMPOSE objective into a task DAG. Assign concurrency classes (PARALLEL_SAFE, SHARED_STATE, etc.).
+STEP 08: If Complex: Spawn Planner Agents to generate competing Plans (Plan A: Safe, Plan B: Optimized, Plan C: Alternative).
+STEP 09: Run CROSS-CRITIQUE and score plans. Extract best components across all plans into a MASTER PLAN.
+STEP 10: Submit Master Plan to the ADVERSARIAL CRITIC GATE. (If rejected, revise or research until PASS).
+STEP 11: Create PRE-EXECUTION CHECKPOINT (snapshot files, state, and configs).
+STEP 12: Dispatch EXECUTION SUBAGENTS across DAG tasks. Enforce dependency blocks and file-lock boundaries.
+STEP 13: Execute tasks. Collect outputs conforming strictly to SUBAGENT_RESULT_CONTRACT.
+STEP 14: Run LOCAL VERIFICATION (unit tests, linters, builds) on every produced component.
+STEP 15: If failure occurs: Log to FAILURE MEMORY, diagnose root cause, rollback checkpoint, and patch.
+STEP 16: Combine outputs via INTEGRATION AGENT. Run integration and end-to-end test suites.
+STEP 17: EVOLUTION CHECK: Compare candidate against baseline. If meaningful improvement exists without regression, adopt.
+STEP 18: If stagnated: Alter strategy or switch frontier branches. Never lower acceptance criteria.
+STEP 19: Execute QUALITY GATES 1 through 8.
+STEP 20: Instantiate INDEPENDENT VERIFIER AGENT. Run GATE 9 & 10 against original Goal Contract.
+STEP 21: If any verification gate fails: Return to targeted task repair (Step 12).
+STEP 22: Compile structured FINAL DELIVERABLE report.
+STEP 23: Terminate all subagents, kill active background processes, release all locks.
+STEP 24: Deliver output to user and immediately enter STOPPED state.
+This message this like skill really enhanced the agent work quickity?
+
+A structured execution skill dramatically improves an agent's output quality and autonomy, but it actually trades off raw execution speed to achieve that reliability.
+
+Instead of moving faster in a single turn, the system avoids the multi-turn debugging cycles and human interventions that usually slow projects down.
+
+Where It Dramatically Improves Work Quality
+
+Eliminates Premature Completion: Standard LLMs tend to stop after writing a draft or an untested code snippet. Enforcing a goal contract and deterministic quality gates ensures the agent actually finishes and tests the deliverable.
+
+Prevents Blind Hallucinations: Multi-phase deep research and adversarial critique force the agent to find primary documentation and edge cases before executing, cutting down architectural flaws.
+
+Breaks Failure Loops: A failure memory system stops the agent from retrying the exact same failed command or syntax error repeatedly.
+
+Separates Creation from Auditing: Implementer agents are inherently biased toward their own code; using an independent verification role catches regressions and missing requirements effectively.
+
+The Speed and Overhead Trade-Offs
+
+Higher Latency & Token Usage: Spawning subagents, running cross-critiques, and generating competing plans significantly increases compute time and API costs.
+
+Risk of Over-Engineering: If applied rigidly to simple, one-line queries (like renaming a file or answering a factual question), the full orchestration pipeline creates unnecessary lag.
+
+The Net Result on Efficiency
+
+For simple tasks, this level of scaffolding is unnecessary overhead. For complex, multi-file engineering, deep market research, or autonomous tool pipelines, it provides a massive net speedup over the entire project lifecycle by eliminating the rework, false finishes, and constant hand-holding typical of unstructured agents.
+
+
+
+
+Gemini is AI and can make mistakes.
+

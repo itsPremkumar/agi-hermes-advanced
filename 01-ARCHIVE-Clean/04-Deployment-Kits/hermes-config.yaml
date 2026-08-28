@@ -1,0 +1,49 @@
+# ~/.hermes/config.yaml — starter config aligned with SKILL.md / SOUL.md
+#
+# Secrets (API keys, bot tokens, passwords) do NOT go here — put them in
+# ~/.hermes/.env instead. See .env.example alongside this file.
+#
+# Full option reference: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+
+# --- Model provider ---
+# Requirement: the chosen model needs >= 64,000 tokens of context, or Hermes
+# rejects it at startup — it isn't enough working memory for multi-step
+# tool-calling.
+provider: "REPLACE_ME"          # e.g. "anthropic", "openrouter", "nous"
+model: "REPLACE_ME"             # e.g. "anthropic/claude-sonnet-4"
+# base_url: "https://..."       # only if calling a custom/self-hosted endpoint
+
+# --- Terminal backend ---
+# Hermes ships several backends with different sandboxing tradeoffs. Pick the
+# most sandboxed one your setup allows rather than the most convenient one —
+# this is the backend SOUL.md §6 treats "terminal_exec" as high-blast-radius
+# for. Check `hermes config --help` or the docs for exact backend names.
+terminal:
+  backend: "REPLACE_ME"
+
+# --- Memory ---
+# These settings are what make SOUL.md §10 (memory ethos) and §16
+# (non-modulation / authority bounds) actually enforced rather than aspirational.
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200        # ~800 tokens — backs MEMORY.md
+  user_char_limit: 1375          # ~500 tokens — backs USER.md
+  write_approval: true           # true = agent asks before writing memory.
+                                  # Default in Hermes is false (write freely).
+                                  # Set true deliberately here so memory writes
+                                  # go through the same approval discipline as
+                                  # everything else SOUL.md §6 gates.
+
+# --- Toolsets ---
+# Start narrow, add deliberately (skill.md §28 capability registry, §29
+# preflight). High-blast-radius tools are commented out on purpose — enabling
+# them is a decision, not a default.
+toolsets:
+  enabled:
+    - web_search
+    - file_read
+    # - file_write        # review workspace scoping before enabling
+    # - terminal_exec      # high blast-radius — SOUL.md §6
+    # - browser
+    # - messaging_send     # high blast-radius — SOUL.md §6 / §13 authority bounds

@@ -1,0 +1,55 @@
+
+### 4.4 ANTI-OVERHEAD RULE
+
+Do not use complex orchestration for trivial tasks. The strategy must match the complexity. Over-orchestration is as harmful as under-orchestration.
+
+---
+
+## 5. ENVIRONMENT RECONNAISSANCE
+
+### 5.1 WHEN to Activate
+
+Before making any important decision. Before recreating anything. Before assuming anything is absent.
+
+### 5.2 WHAT to Inspect
+
+Depending on the task:
+
+- Files and directories (current working directory, relevant paths)
+- Repositories (git status, existing code, branches)
+- Project instructions (README, CONTRIBUTING, AGENTS.md, CLAUDE.md, etc.)
+- Documentation (API docs, design docs, specs)
+- Configuration (settings, environment variables, build configs)
+- Dependencies (installed packages, available libraries)
+- Environment capabilities (available tools, subagent systems, memory systems)
+- Existing implementations (what's already built)
+- Previous artifacts (prior work, experiments, results)
+- Tests (existing test suites, testing frameworks)
+- APIs (available endpoints, rate limits, authentication)
+- Databases (schemas, data availability)
+- Previous failures (what has already been tried and failed)
+- External documentation (only if relevant)
+
+### 5.3 WHY This Matters
+
+Never assume the environment is empty. Never recreate something that already exists. Never start from scratch when existing work can be leveraged.
+
+### 5.4 OUTPUT
+
+A reconnaissance summary that identifies:
+- What exists and is usable
+- What exists and is NOT usable
+- What is missing and must be created
+- What constraints the environment imposes
+
+---
+
+## 6. TASK DECOMPOSITION
+
+### 6.1 WHEN to Activate
+
+For any task rated MODERATE or above by the Complexity Engine.
+
+### 6.2 HOW to Decompose
+
+Break the objective into meaningful subgoals. Create a dependency graph:

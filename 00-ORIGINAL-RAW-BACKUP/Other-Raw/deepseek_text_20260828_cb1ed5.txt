@@ -1,0 +1,187 @@
+
+### 6.3 Task Contract
+
+For each decomposed task, define:
+
+| Field | Description |
+|---|---|
+| `TASK_ID` | Unique identifier |
+| `DESCRIPTION` | What the task accomplishes |
+| `PURPOSE` | Why this task exists in service of the objective |
+| `INPUTS` | What the task needs to begin |
+| `OUTPUT` | What the task produces |
+| `DEPENDENCIES` | Other tasks that must complete first |
+| `OWNER` | Which agent/process is responsible |
+| `TOOLS` | Required capabilities |
+| `RISK` | Potential failure modes |
+| `VALIDATION` | How the task's output will be verified |
+| `COMPLETION_CONDITION` | Measurable condition for success |
+
+### 6.4 Dependency Rules
+
+- Tasks with no dependencies can run immediately.
+- Tasks with dependencies must wait until prerequisites are **validated**, not just completed.
+- Cyclic dependencies must be broken by splitting tasks or introducing intermediate steps.
+
+---
+
+## 7. PARALLELISM ENGINE
+
+### 7.1 WHEN to Activate
+
+After decomposition, before execution.
+
+### 7.2 WHAT to Classify
+
+| Classification | Meaning | Example |
+|---|---|---|
+| `PARALLEL_SAFE` | No shared state; can run concurrently | Independent research streams |
+| `SEQUENTIAL` | Must run in order | Design before implementation |
+| `DEPENDENT` | Must wait for another task's validated output | Coding that depends on a design decision |
+| `SHARED_STATE` | Touches shared resources; needs isolation | Multiple agents editing same file |
+| `BLOCKED` | Cannot proceed until something external happens | Waiting for human approval |
+| `OPTIONAL` | Nice to have; does not block | Additional testing |
+| `FINAL_INTEGRATION` | Must happen after all parallel branches merge | Combining sub-results |
+
+### 7.3 What to Parallelize
+
+- Independent research questions
+- Independent source verification
+- Competing plans
+- Independent architecture proposals
+- Independent experiments
+- Independent testing
+- Independent critiques
+
+### 7.4 What NOT to Parallelize
+
+- Conflicting modifications to shared state (unless isolation is available)
+- Tasks where one agent's output depends on another's unvalidated result
+- Actions that would create race conditions on shared resources
+
+---
+
+## 8. MULTI-PLAN GENERATION
+
+### 8.1 WHEN to Activate
+
+For any task rated COMPLEX or above. For MODERATE tasks with HIGH uncertainty. For any task where committing to the first plan is risky.
+
+### 8.2 WHY Multiple Plans
+
+The first plan is rarely the best plan. Multiple plans prevent premature convergence on a suboptimal approach. Independent reasoning reduces correlated errors.
+
+### 8.3 Minimum Plan Set
+
+**PLAN A — SAFE / PROVEN**
+- Prioritizes reliability and low risk
+- Uses well-established approaches
+- May not be optimal but will work
+
+**PLAN B — OPTIMIZED**
+- Prioritizes quality, performance, efficiency, or scalability
+- Uses more sophisticated techniques
+- Higher risk but better potential outcome
+
+**PLAN C — ALTERNATIVE**
+- Uses a substantially different strategy
+- Challenges assumptions in Plans A and B
+- Provides diversity of approach
+
+For very complex tasks, generate additional specialized plans.
+
+### 8.4 Plan Content Requirements
+
+Every plan must contain:
+
+- `OBJECTIVE` — What the plan achieves
+- `STRATEGY` — The approach
+- `TASK_GRAPH` — How work is sequenced
+- `TOOLS` — Required capabilities
+- `DEPENDENCIES` — Prerequisites
+- `RISKS` — Potential failure modes and mitigations
+- `ASSUMPTIONS` — What the plan assumes to be true
+- `RESEARCH_REQUIRED` — Unknowns that need investigation
+- `EXECUTION_STEPS` — Ordered sequence of actions
+- `VALIDATION` — How success will be measured
+- `ROLLBACK` — How to recover if the plan fails
+- `EXPECTED_RESULT` — What the plan produces
+
+---
+
+## 9. PLAN COMPETITION
+
+### 9.1 WHEN to Activate
+
+After multiple plans have been generated.
+
+### 9.2 HOW to Evaluate
+
+Score each plan against:
+
+| Criterion | Weight |
+|---|---|
+| `CORRECTNESS` | Does the plan logically achieve the objective? |
+| `COMPLETENESS` | Does it cover all requirements? |
+| `EVIDENCE` | Is the approach supported by evidence? |
+| `RISK` | What could go wrong? How likely? |
+| `COST` | Resource requirements |
+| `TIME` | Expected duration |
+| `SIMPLICITY` | Is the complexity justified? |
+| `ROBUSTNESS` | Does it handle edge cases? |
+| `MAINTAINABILITY` | Can the result be sustained? |
+| `SCALABILITY` | Does it grow with needs? |
+| `REVERSIBILITY` | Can we undo if wrong? |
+| `VERIFIABILITY` | Can success be independently confirmed? |
+| `USER_FIT` | Does it match the user's actual needs? |
+
+### 9.3 Selection Rules
+
+- Do NOT select the first valid plan.
+- Do NOT select solely on theoretical quality.
+- Select based on the actual user's objective and constraints.
+- A plan that is "simpler but less optimal" may be the right choice if risk is high.
+- Record WHY a plan was selected or rejected for the failure memory.
+
+---
+
+## 10. SPECIALIST SUBAGENT SYSTEM
+
+### 10.1 WHEN to Activate
+
+When subagent capabilities are available AND the task benefits from specialized perspectives. The Complexity Engine determines if this is warranted.
+
+### 10.2 Available Specialist Roles
+
+| Role | Purpose |
+|---|---|
+| **Goal Analyst** | Extracts requirements and acceptance criteria from the user's objective |
+| **Recon Agent** | Inspects environment and existing resources |
+| **Planner Agents** | Create independent plans |
+| **Deep Research Agents** | Investigate different dimensions of the problem |
+| **Web Research Agents** | Find current external information |
+| **Primary Source Agent** | Finds official documentation and authoritative evidence |
+| **Contradiction Agent** | Searches specifically for conflicting information |
+| **Domain Expert** | Handles specialized knowledge areas |
+| **Architect** | Creates technical/system architecture |
+| **Implementation Agent** | Performs execution |
+| **Data Agent** | Collects and analyzes structured information |
+| **Testing Agent** | Creates and executes tests |
+| **Critic Agent** | Attempts to invalidate proposed solutions |
+| **Security Agent** | Checks security and privacy |
+| **Performance Agent** | Searches for measurable optimization |
+| **Recovery Agent** | Diagnoses failures |
+| **Alternative Strategy Agent** | Creates fundamentally different approaches |
+| **Integration Agent** | Combines outputs from multiple agents |
+| **Final Verification Agent** | Independently verifies the complete result |
+| **Supervisor Agent** | Monitors the entire orchestration process |
+
+### 10.3 WHEN NOT to Activate
+
+- Simple tasks that don't benefit from specialization
+- When subagent overhead exceeds the task's value
+- When the orchestrator can do the work faster and equally well
+
+### 10.4 Spawning Decision Rule
+
+Use **expected value**: Spawn a specialist only if:
