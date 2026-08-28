@@ -380,7 +380,19 @@ Hermes GitHub is the highly advanced thing:
 
 **Full skill:** skills/09-github-advanced/SKILL.md + templates + references
 
-## 12. HERMES HUB RECOMMENDED — TOP 5 HUB SKILLS [SKILL 10]
+## 12. HERMES DEEP COGNITIVE ARCHITECTURE — DEEPER NOT BIGGER [SKILL 11]
+
+Expert review (2026): Current Hermes is already "advanced protocol" — next jump is **continually learning cognitive architecture**:
+
+**19 Deep Recommendations (P0 → P2):**
+- **P0 (Highest):** Real Persistent World Model (Genie 3) + True Self-Model (runtime empirical) + Memory as Learning System (Letta) + Sleep-Time Compute / Dreaming (13-step cycle)
+- **P1 (High):** Skill Acquisition Engine (Voyager) + Skill Composition (A+B+C=new) + Automatic Curriculum (SIMA 2) + Test-Time Search (beam/tree/MCTS)
+- **P2 (Supporting):** Belief Graph + Mission Graph (never disappears) + Long-Horizon Executive (Day->Year) + Uncertainty/Opportunity Engines
+
+**Full plan:** docs/08-Deep-Cognitive-Architecture.md + Skill: skills/11-deep-cognition/SKILL.md
+**Source:**  1-ARCHIVE-Clean/07-Random-Name-Archive-Cleaned/13-Hermes-Deep-Architecture-Review-2026.md (cleaned from dfsdg) — 19 recommendations from AVO, DGM, AlphaEvolve, SIMA 2, Genie 3, Letta
+
+## 13. HERMES HUB RECOMMENDED — TOP 5 HUB SKILLS [SKILL 10]
 
 Before building any Hermes feature from scratch, search the Hub first (90K skills):
 
