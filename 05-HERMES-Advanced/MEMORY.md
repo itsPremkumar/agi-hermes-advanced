@@ -1,16 +1,6 @@
 # MEMORY.md — Hermes Advanced
 
-<!--
-  HERMES MEMORY — Agent-curated, not hand-authored.
-  Hermes writes durable facts here over time (gated by config.yaml write_approval).
-  Stays under memory_char_limit (4000 chars in Advanced, vs 2200 default) because
-  this file is loaded into EVERY session's context — it competes for the same space
-  as everything else, so ONLY hold what's actually worth that cost: durable facts,
-  not a running log.
 
-  Leave mostly empty at start. Seed only with short, dated, cross-session truths.
-  See docs/02-Architecture.md for Memory OS details (15 namespaces, hierarchical compression).
--->
 
 ## Durable Facts
 

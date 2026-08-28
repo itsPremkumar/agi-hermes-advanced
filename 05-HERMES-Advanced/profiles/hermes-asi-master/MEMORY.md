@@ -1,13 +1,6 @@
 # MEMORY.md — HERMES-ASI-MASTER L1/L2 Memory Core
 
-<!--
-  HERMES-ASI-MASTER PERSISTENT MEMORY
-  Tiered Memory System:
-  - L1 Working Context Buffer
-  - L2 Persistent Key Facts & Preferences (This File)
-  - L3 Structured JSON State Stores (state/*.json)
-  - L4 Archival Storage & Evidence Graphs (evidence/*)
--->
+
 
 ## Verified System Truths
 
