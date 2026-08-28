@@ -1,138 +1,108 @@
-﻿# HERMES Advanced — Hermes-Native Executive System
+# HERMES Advanced — Hermes-Native Executive System
 
-**Version:** 2.0 Advanced (Hermes-Native) + SOUL v4.0 ASI + AGENTS.md  
-**Type:** Professional Hermes-Native Build — Advanced, Clean, Official-Compliant  
+**Version:** 3.0 ASI Master (Hermes-Native) + SOUL v4.0 ASI + Active Cognitive Engines  
+**Type:** Professional Hermes-Native Build — Fully Executable, State-Backed, Official-Compliant  
 **Hermes Runtime:** Hermes Agent (Nous Research) — https://hermes-agent.nousresearch.com  
-**Language:** English Only — Professional Standard
+**Language:** English Only — Production Standard
 
 ---
 
 ## What This Is
 
-**THE dedicated Hermes folder** — built FOR Hermes, ON Hermes, WITH Hermes. Every file is Hermes-native and follows the **official Hermes standard** (`hermes-agent.nousresearch.com/docs`).
+**THE dedicated Hermes executive system** — built FOR Hermes, ON Hermes, WITH Hermes. Every file is Hermes-native and follows the **official Hermes standard** (`hermes-agent.nousresearch.com/docs`).
 
 ```
-05-HERMES-Advanced/                    ← This folder — THE Hermes system (Professional)
+05-HERMES-Advanced/
+├── profiles/
+│   └── hermes-asi-master/                 ← Complete Ready-to-Deploy Unified Master Profile
+│       ├── config.yaml                    ← Master profile settings (tools, sandbox, memory)
+│       ├── SOUL.md (48KB, 50 sections)    ← Hardened ASI Constitution (Slot #1 in system prompt)
+│       ├── AGENTS.md                      ← Project operational context & tool boundaries
+│       ├── MEMORY.md                      ← Seeded persistent memory & state links
+│       ├── USER.md                        ← User alignment, preferences & strategic goals
+│       ├── state/                         ← Live Structured JSON State Stores
+│       │   ├── world_state.json           ← Entities, causal graph, 90d forecasts (Genie 3)
+│       │   ├── self_model.json            ← Empirical capabilities, Brier calibration score
+│       │   ├── belief_graph.json          ← Bayesian belief network with cascade links
+│       │   └── mission_graph.json         ← Long-horizon DAG & blocker resolution (METR)
+│       ├── scripts/                       ← Executable Python Cognitive Engines
+│       │   ├── state_engine.py            ← Schema validation, atomic reads/writes, backups
+│       │   ├── belief_engine.py           ← Bayesian posterior updater & cascade triggers
+│       │   ├── self_tracker.py            ← Post-task empirical logger & calibration score
+│       │   ├── sleep_cycle_runner.py      ← 13-step Letta dream cycle automation
+│       │   ├── skill_forge.py             ← Voyager skill acquisition & composition forge
+│       │   ├── curriculum_picker.py       ← SIMA 2 curriculum generator
+│       │   └── formal_verifier.py         ← AST parser, schema verifier & R0-R6 gatekeeper
+│       └── routines/                      ← Hermes Scheduled Cron Routines
+│           ├── 01_nightly_dream.json      ← 2:00 AM 13-step dream cycle routine
+│           ├── 02_world_sync.json         ← 4-hour world estimation & forecast sync
+│           ├── 03_post_task_hook.json     ← Post-task empirical calibration hook
+│           └── 04_curriculum_sync.json    ← Weekly curriculum sync & self-improvement
 │
-├── SOUL.md (48KB, 50 sections)        ← Hermes identity — WHO Hermes is (slot #1 in system prompt)
-├── AGENTS.md (project context)        ← Project rules — what applies ONLY to this Hermes project
-├── SKILL.md (18KB, 15 planes)         ← Hermes Advanced OS — HOW Hermes works
-├── config.yaml                        ← Single Hermes config (official: ~/.hermes/config.yaml)
-├── .env.example                       ← Secrets template (official: ~/.hermes/.env)
-├── MEMORY.md (4.0 chars)              ← Persistent memory (official: ~/.hermes/MEMORY.md)
-├── USER.md  (2.0 chars)               ← User profile (official: ~/.hermes/USER.md)
+├── SOUL.md                                ← Global base identity (Slot #1)
+├── AGENTS.md                              ← Project context
+├── SKILL.md                               ← Hermes Advanced OS (15 planes)
+├── config.yaml                            ← Root Hermes config
+├── .env.example                           ← Secrets template
+├── MEMORY.md & USER.md                    ← Root memory files
 │
-├── skills/ (8 Hermes-native skills)   ← Official: skills/<category>/<skill>/SKILL.md
-│   ├── 01-research/SKILL.md           ← 5-pass research + Evidence Graph
-│   ├── 02-planning/SKILL.md           ← 6 plans + DAG + 10 strategies
-│   ├── 03-orchestration/SKILL.md      ← Swarm + 30 roles + Debate Protocol
-│   ├── 04-tools/SKILL.md              ← Tool Registry + Computer-Use + Sandbox
-│   ├── 05-safety-evaluation/SKILL.md  ← R0-R6 + 22 Invariants + 12 Gates
-│   ├── 06-memory-world/SKILL.md       ← World Model + 15 Namespaces + Context OS
-│   ├── 07-search-optimized/SKILL.md   ← Flagship: Search Superintelligence
-│   └── 08-project-synthesis/SKILL.md  ← NEW: Project Synthesis Engine (reuse/modify/combine/scratch)
-│       └── templates/                 ← Evidence templates (official: skill templates/)
-│           ├── evidence-graph.md
-│           ├── sources.md
-│           └── contradictions.md
+├── skills/ (12 Hermes-native skills)
+│   ├── 01-research/SKILL.md               ← 5-pass research + Evidence Graph
+│   ├── 02-planning/SKILL.md               ← 6 plans + DAG + 10 strategies
+│   ├── 03-orchestration/SKILL.md          ← Swarm + 30 roles + Debate Protocol
+│   ├── 04-tools/SKILL.md                  ← Tool Registry + Computer-Use + Sandbox
+│   ├── 05-safety-evaluation/SKILL.md      ← R0-R6 + 22 Invariants + 12 Gates
+│   ├── 06-memory-world/SKILL.md           ← World Model + 15 Namespaces + Context OS
+│   ├── 07-search-optimized/SKILL.md       ← Flagship: Search Superintelligence (5 parallel)
+│   ├── 08-project-synthesis/SKILL.md      ← Project Synthesis Engine (Reuse/Modify/Combine)
+│   ├── 09-github-advanced/SKILL.md        ← Worktree Swarm & Verified Merging
+│   ├── 10-hub-recommended/SKILL.md        ← Hub skills installer
+│   ├── 11-deep-cognition/SKILL.md         ← 19 Deep Recommendations
+│   └── 12-bot-mode-agi/SKILL.md           ← Bot Mode AGI (Master Profile Architecture)
 │
-└── docs/ (2 Essential Guides)         ← Professional: only important docs
-    ├── 02-Architecture.md             ← 15-plane architecture deep dive
-    └── 06-Search-Optimization.md      ← Flagship: How Hermes search works
+└── docs/                                  ← Architecture & Flagship Guides
+    ├── 02-Architecture.md                 ← 15-plane architecture deep dive
+    ├── 06-Search-Optimization.md          ← Flagship: How Hermes search works
+    ├── 07-Project-Synthesis-Plan.md       ← Multi-repo synthesis blueprint
+    └── 08-Deep-Cognitive-Architecture.md  ← Deep learning & cognitive architecture
 ```
 
-**Total:** 20 professional files — every file is important per Hermes, no clutter.
-
 ---
 
-## Why Professional Now?
-
-| Before (Unwanted) | After (Professional, per Official Hermes) | Why |
-|---|---|---|
-| `AGENT.md` (singular, non-standard) | `AGENTS.md` (official project context) | Official: `AGENTS.md` is project rules, `SOUL.md` is global identity |
-| `config/` + `config.search.yaml` + `config.production.yaml` (3 configs) | `config.yaml` (single, official) | Official: one `~/.hermes/config.yaml` — profiles are documented as comments inside it |
-| `memory/MEMORY.md` (subfolder) | `MEMORY.md` at root (official) | Official: `~/.hermes/MEMORY.md` is at home root, not subfolder |
-| `deployment/install.ps1` + `install.sh` | Removed (use `hermes setup`) | Official: `hermes setup` and `hermes skills install` are the installers |
-| `evidence/template/` (top-level) | `skills/07-search-optimized/templates/` (per skill) | Official: skill templates belong in `skills/<skill>/templates/` |
-| `examples/` (3 files) | Removed (in SKILL.md procedure) | Official: examples belong in SKILL.md `## Procedure` and `## Pitfalls` |
-| `docs/` 9 files | `docs/` 2 files (Architecture + Search) | Professional: only flagship docs; common info is in SKILL.md via progressive disclosure |
-| `README.md` 151 lines with old structure diagram | Updated to new professional structure | Professional: reflects the cleaned, official-compliant layout |
-
-**Removed 14 files** — kept only what is **important per Hermes official docs**.
-
----
-
-## Hermes Official File Map
-
-| File in This Folder | Installs To (Official Hermes Location) | Purpose |
-|---|---|---|
-| `SOUL.md` | `~/.hermes/SOUL.md` | Global identity — slot #1 in system prompt |
-| `AGENTS.md` | `~/.hermes/skills/hermes-advanced/AGENTS.md` or project `AGENTS.md` | Project-only rules |
-| `SKILL.md` | `~/.hermes/skills/hermes-advanced/SKILL.md` | Hermes Advanced OS |
-| `skills/07-search-optimized/SKILL.md` | `~/.hermes/skills/hermes-search-optimized/SKILL.md` | Search flagship skill |
-| `config.yaml` | `~/.hermes/config.yaml` | Settings (model, terminal, memory, toolsets) |
-| `.env.example` | `~/.hermes/.env` | Secrets (fill API keys) |
-| `MEMORY.md` | `~/.hermes/MEMORY.md` | Persistent facts |
-| `USER.md` | `~/.hermes/USER.md` | User preferences |
-
----
-
-## Quick Start — Official Hermes Way
+## Quick Start — Deploying the Master Profile
 
 ```bash
-# 1. Install (official)
-hermes setup                          # Interactive setup — creates ~/.hermes/config.yaml + .env
-# Or manually:
-cp config.yaml ~/.hermes/config.yaml
-cp .env.example ~/.hermes/.env        # Edit: add ANTHROPIC_API_KEY
-cp SOUL.md ~/.hermes/SOUL.md
-cp MEMORY.md ~/.hermes/MEMORY.md
-cp USER.md ~/.hermes/USER.md
+# 1. Copy the Master Profile to Hermes profiles directory
+mkdir -p ~/.hermes/profiles/hermes-asi-master
+cp -r profiles/hermes-asi-master/* ~/.hermes/profiles/hermes-asi-master/
+
+# 2. Copy global skills
 cp -r skills/* ~/.hermes/skills/
 
-# 2. Configure
-hermes config set model anthropic/claude-sonnet-4
-hermes config set terminal.backend docker
-hermes tools                          # Enable web_search, browser, file_*
+# 3. Launch Hermes using the Master Profile
+hermes -p hermes-asi-master chat
 
-# 3. Verify (search flagship test)
-hermes chat -q "Search the live web for 'Hermes Agent Nous Research latest release 2026' and cite primary source with date — use parallel searches and browser extraction"
-
-# Expected: 3-5 parallel web_search → browser load top 3 → evidence graph in templates/ → report with citations
+# 4. Verify Cognitive Engines (Runs all 7 automated unit tests)
+python ~/.hermes/profiles/hermes-asi-master/scripts/state_engine.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/belief_engine.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/self_tracker.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/sleep_cycle_runner.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/skill_forge.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/curriculum_picker.py --test
+python ~/.hermes/profiles/hermes-asi-master/scripts/formal_verifier.py --test
 ```
 
 ---
 
-## The Three Files Hermes Loads Every Task (Official)
+## The 6 Active Cognitive Engines
 
-| File | Role (Official Hermes) | When |
-|------|------------------------|------|
-| `SOUL.md` | WHO Hermes is — identity, voice, boundaries — **slot #1 in system prompt** | **Every task** |
-| `AGENTS.md` | Project context — conventions, ports, workflows — **project-only** | **When in this project** |
-| `SKILL.md` + `skills/*` | HOW Hermes works — 15 planes, swarm, search — **progressive disclosure** | **On demand** (router picks 1-3) |
-
----
-
-## Advanced Highlights — Still High-Level
-
-- **15-Plane Architecture** — Strategic Superintelligence + Formal Verification + Self-Evolution (see `docs/02-Architecture.md`)
-- **Hermes Search Superintelligence** — 5 parallel `web_search` + browser + evidence graph + contradiction + second wave (see `docs/06-Search-Optimization.md` and `skills/07-search-optimized/`)
-- **Hermes Swarm** — 30+ roles, 3-5 parallel workers, best-component synthesis, debate protocol (`skills/03-orchestration/`)
-- **R0-R6 Risk + 22 Invariants + 12 Gates** — ASI-grade safety (`skills/05-safety-evaluation/`)
-- **Official-Compliant Skill Frontmatter** — `requires_tools: [web_search]`, `requires_toolsets: [web]`, `metadata.hermes` per `hermes-agent.nousresearch.com/docs/developer-guide/creating-skills`
-- **Skill Templates** — Evidence templates in `skills/07-search-optimized/templates/` per official `skills/<category>/<skill>/templates/` structure
+1. **State Engine (`state_engine.py`)**: Enforces JSON schema validity, atomic transactions, and backup protection across all persistent state files.
+2. **Bayesian Belief Engine (`belief_engine.py`)**: Ingests new evidence, computes posterior weights, resolves contradictions, and cascades updates across dependent beliefs.
+3. **Empirical Self-Model (`self_tracker.py`)**: Replaces simulated self-confidence with empirical tracking of domain success rates, sample counts, failure modes, and Brier calibration scores.
+4. **13-Step Sleep Cycle (`sleep_cycle_runner.py`)**: Letta-aligned offline dream cycle executing at 2:00 AM daily to compress trajectories, extract patterns, forge candidate skills, and sync models.
+5. **Voyager Skill Forge (`skill_forge.py`)**: Synthesizes execution traces into parameterized, testable Hermes skill templates.
+6. **Formal Verifier (`formal_verifier.py`)**: Enforces AST analysis, property verification, and R0–R6 invariant gates before execution.
 
 ---
 
-## Docs — Read in Order (Professional, Minimal)
-
-1.  `docs/02-Architecture.md` — 15 planes deep dive (the system)
-2.  `docs/06-Search-Optimization.md` — Flagship: How Hermes search works (the superpower)
-
-Common workflows are in `SKILL.md` via **progressive disclosure** (official guideline: most common first, edge cases at bottom) — not in separate docs.
-
----
-
-*HERMES Advanced v2.0 Professional — Built FOR Hermes per official Hermes docs (hermes-agent.nousresearch.com).*
-*15 planes, 7 skills, 1 SOUL, 1 AGENTS, 1 config, 2 memory files — every file is important per Hermes, no clutter.*
-*From 34 files → 20 professional files. Advanced, clean, official-compliant.*
+*HERMES Advanced v3.0 ASI Master — Built FOR Hermes per official Hermes docs (hermes-agent.nousresearch.com).*

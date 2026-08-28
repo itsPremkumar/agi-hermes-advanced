@@ -238,6 +238,23 @@ Name: Cognition
 
 ## 8. TEMPLATES
 
+---
+
+## 9. PRE-BUILT MASTER PROFILE: `profiles/hermes-asi-master/`
+
+Instead of creating 10 individual profiles manually, you can directly deploy the **Unified Master Profile**:
+- **Location:** `05-HERMES-Advanced/profiles/hermes-asi-master/`
+- **Internal Engines:** Active Python scripts (`scripts/`) for Bayesian belief updates, empirical self-tracking, 13-step sleep cycles, and formal verification.
+- **State Stores:** Live JSON files (`state/`) for `world_state.json`, `self_model.json`, `belief_graph.json`, and `mission_graph.json`.
+- **Routines:** Automated cron jobs in `routines/` for nightly Letta dreaming (`01_nightly_dream.json`) and 4-hour world sync (`02_world_sync.json`).
+
+```bash
+# Instant Deployment:
+cp -r 05-HERMES-Advanced/profiles/hermes-asi-master ~/.hermes/profiles/
+hermes -p hermes-asi-master chat
+```
+
+
 - **Bot Creation Checklist:** `templates/bot-creation-checklist.md`
 - **Cognition Group Prompt:** `templates/cognition-group-prompt.md`
 
