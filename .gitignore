@@ -53,6 +53,9 @@ Thumbs.db
 # ── Upstream Subclones & Scratch ──
 hermes-agent-upstream/
 hermes-asi-master-clone/
+hermes-super-harness/core/hermes-agent/
+hermes-super-harness/backups/
+hermes-super-harness/sandbox_workdir/
 scratch/
 *.log
 
