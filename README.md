@@ -1,4 +1,4 @@
-﻿# AGI Project - Master Root
+# AGI Project - Master Root
 
 **Location:** Project Root
 **Status:** Fully Organized, Proper Names, English Only, Live Content
@@ -134,18 +134,34 @@ The original folder had 40 files with **random names** (`chghgf`, `sgsd`, `fhfh`
 
 ## Quick Start
 
-### For Hermes Users (Recommended):
+### 1-Click Universal Installer (Recommended):
 
-```powershell
-# Install the dedicated Hermes Advanced system
-git clone https://github.com/itsPremkumar/agi-hermes-advanced.git
-cd agi-hermes-advanced/05-HERMES-Advanced
-# Follow 05-HERMES-Advanced/README.md
-# 1. Copy config.yaml to ~/.hermes/config.yaml (set provider, model, backend)
-# 2. Copy .env.example to ~/.hermes/.env (set API keys)
+```bash
+# Deploys configs, constitutions (SOUL.md), memory files, and all 12 skills to ~/.hermes/
+python install.py --all-skills
+
+# Or simulate first without touching disk:
+python install.py --dry-run
 ```
 
-### For Generic Harnesses:
+### Run Benchmark & Empirical Evals:
+
+```bash
+# List all standardized benchmark tasks
+python evals/run_evals.py --list
+
+# Run empirical evaluation suite across Research, Safety, and Epistemics
+python evals/run_evals.py --run-all
+```
+
+### Run Skill Schema Tests:
+
+```bash
+# Pytest verification for YAML frontmatters, required toolsets, and helper scripts
+pytest tests/test_skills_schema.py -v
+```
+
+### For Generic Agent Harnesses:
 
 ```powershell
 # Use the Ultimate 2-file

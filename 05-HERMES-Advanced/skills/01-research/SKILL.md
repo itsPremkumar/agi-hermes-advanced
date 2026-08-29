@@ -1,14 +1,16 @@
-﻿---
-name: agi-research-evidence
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: Research, Evidence Synthesis, Source Verification
-planes: [World Model, Evidence Graph, Research Engine]
-hermes_tools: [web_search, browser, file_read, file_write]
 ---
-
+name: hermes-research
+description: Hermes Research & Evidence Synthesis — 5-pass research protocol, evidence graph generation, primary source verification, and contradiction detection.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'research', 'evidence', 'verification', 'citations']
+    category: hermes-advanced
+    requires_tools: ['web_search', 'browser', 'file_read', 'file_write']
+    requires_toolsets: ['web']
+---
 # SKILL 01 â€” RESEARCH & EVIDENCE SYNTHESIS
 
 > **Load this skill when:** Task needs internet facts, source verification, contradiction checks, or evidence graphs.

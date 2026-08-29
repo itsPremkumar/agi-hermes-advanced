@@ -1,6 +1,6 @@
 # HERMES Advanced — Universal AGI/ASI Executive System
 
-**Version:** 4.0 ASI Universal Master (Hermes-Native) + SOUL v4.0 ASI + 19 Active Cognitive Engines & MCP Bridges  
+**Version:** 4.0 ASI Universal Master (Hermes-Native) + SOUL v4.0 ASI + 26 Active Cognitive Engines & Evolutionary Harness  
 **Type:** Production Hermes-Native Build — Fully Executable, State-Backed, Official-Compliant  
 **Hermes Runtime:** Hermes Agent (Nous Research) — https://hermes-agent.nousresearch.com  
 **Language:** English Only — Production Standard
@@ -108,6 +108,38 @@
 │   ├── 07-Project-Synthesis-Plan.md
 │   └── 08-Deep-Cognitive-Architecture.md
 │
+=======
+05-HERMES-Advanced/                    ← This folder — THE Hermes system (Production Build)
+│
+├── SOUL.md (48KB, 50 sections)        ← Hermes identity — WHO Hermes is (slot #1 in system prompt)
+├── AGENTS.md (project context)        ← Project rules — what applies ONLY to this Hermes project
+├── SKILL.md (18KB, 15 planes)         ← Hermes Advanced OS — HOW Hermes works
+├── config.yaml                        ← Single Hermes config (official: ~/.hermes/config.yaml)
+├── mcp_servers.json                   ← Pre-configured Model Context Protocol (MCP) servers
+├── .env.example                       ← Secrets template (official: ~/.hermes/.env)
+├── MEMORY.md                          ← Persistent memory (official: ~/.hermes/MEMORY.md)
+├── USER.md                            ← User profile (official: ~/.hermes/USER.md)
+│
+├── skills/ (12 Hermes-native skills)  ← Official: skills/<category>/<skill>/SKILL.md
+│   ├── 01-research/                   ← 5-pass research + Evidence Graph
+│   ├── 02-planning/                   ← 6 plans + DAG + 10 strategies
+│   ├── 03-orchestration/              ← Swarm + 30 roles + Debate Protocol
+│   ├── 04-tools/                      ← Tool Registry + Computer-Use + Sandbox
+│   ├── 05-safety-evaluation/          ← R0-R6 + 22 Invariants + 12 Gates
+│   ├── 06-memory-world/               ← World Model + 15 Namespaces + scripts/belief_graph_manager.py
+│   ├── 07-search-optimized/           ← Flagship: Search Superintelligence + scripts/parse_evidence.py
+│   ├── 08-project-synthesis/          ← Project Synthesis Engine (reuse/modify/combine/scratch)
+│   ├── 09-github-advanced/            ← Git worktrees, PRs, CI helper scripts
+│   ├── 10-hub-recommended/            ← Curated toolsets & automated skill installer
+│   ├── 11-deep-cognition/             ← 19 Deep Recommendations + scripts/sleep_compute.py
+│   └── 12-bot-mode-agi/               ← 10 Persistent Bots as Immortal Cognitive Organs
+│
+└── docs/                              ← Architecture & Integration Guides
+    ├── 02-Architecture.md             ← 15-plane architecture deep dive
+    ├── 06-Search-Optimization.md      ← Flagship: How Hermes search works
+    ├── 08-Deep-Cognitive-Architecture.md ← 19 Deep Recommendations (Genie 3, Letta, SIMA 2)
+    └── 09-MCP-Integration.md          ← Model Context Protocol (MCP) setup guide
+>>>>>>> Stashed changes
 ```
 
 ---
@@ -115,22 +147,16 @@
 ## Quick Start — Deploying the Master Profile
 
 ```bash
-# 1. Copy the Master Profile to Hermes profiles directory
-mkdir -p ~/.hermes/profiles/hermes-asi-master
-cp -r profiles/hermes-asi-master/* ~/.hermes/profiles/hermes-asi-master/
+# 1. Automatic installation to ~/.hermes/
+python install.py --all-skills
 
-# 2. Copy all 16 skills
-cp -r skills/* ~/.hermes/skills/
-
-# 3. Launch Hermes using the Master Profile or Bot Mode
+# 2. Launch Hermes using the Master Profile
 hermes -p hermes-asi-master chat
-# Or launch as bot
-hermes -p asi-bot chat
 ```
 
 ---
 
-## The 19 Active Cognitive Engines & MCP Bridges (All Tested & Verified)
+## The Active Cognitive Engines & Evolutionary Harness
 
 1. **State Engine (`state_engine.py`)**: Schema validation, atomic reads/writes, and backups.
 2. **Bayesian Belief Engine (`belief_engine.py`)**: Bayesian posterior calculation and cascade triggers.
@@ -148,6 +174,8 @@ hermes -p asi-bot chat
 14. **Formal Prover (`formal_prover_lean4.py`)**: Z3 and Lean 4 neuro-symbolic mathematical proofs.
 15. **Economic Ledger (`economic_ledger.py`)**: Token and financial budget tracking per mission.
 16. **IoT Controller (`iot_controller.py`)**: Home Assistant and hardware sensor telemetry.
+17. **Evolutionary Harness CLI (`harness_cli.py`)**: Universal autonomous launcher for DAG execution and benchmarks.
+18. **Update Engine (`hermes_update_manager.py`)**: Continuous upstream synchronization and test certification.
 
 ---
 

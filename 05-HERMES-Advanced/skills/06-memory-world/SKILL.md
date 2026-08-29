@@ -1,13 +1,15 @@
-﻿---
-name: agi-memory-world
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: World Model, Epistemics, Evidence, Context, Memory, Temporal Reasoning
-planes: [World Model, Memory, Context, Cognition]
 ---
-
+name: hermes-memory-world
+description: Hermes Memory & World Model — 15 partitioned durable namespaces, SQLite belief graph, state estimation, causal/counterfactual tracking, and context OS.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'memory', 'world-model', 'state-estimation', 'belief-graph']
+    category: hermes-advanced
+    requires_tools: ['file_read', 'file_write']
+---
 # SKILL 06 â€” MEMORY, WORLD MODEL & CONTEXT
 
 > **Load this skill when:** Task needs world state tracking, memory recall/storage, context management, or epistemic rigor.

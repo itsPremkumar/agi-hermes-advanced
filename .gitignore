@@ -1,4 +1,4 @@
-﻿# HERMES Advanced Project — Root .gitignore
+# HERMES Advanced Project — Root .gitignore
 # Keeps secrets, worktrees, runtime, and OS files out of git
 
 # ── Secrets (NEVER commit) ──
@@ -48,11 +48,21 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 *.swp
+*~
+
+# ── Upstream Subclones & Scratch ──
+hermes-agent-upstream/
+hermes-asi-master-clone/
+scratch/
+*.log
 
 # ── IDE ──
 .vscode/
 .idea/
 
-# ── Logs ──
-*.log
+# ── Logs & Test Artifacts ──
 logs/
+.pytest_cache/
+eval_report.json
+scratch/
+sleep_report.json

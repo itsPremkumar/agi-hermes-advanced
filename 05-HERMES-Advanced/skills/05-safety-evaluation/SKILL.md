@@ -1,13 +1,15 @@
-﻿---
-name: agi-safety-evaluation
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: Safety, Security, Permissions, Evaluation, Evolution, Recovery
-planes: [Safety & Security, Evaluation, Learning & Evolution, Formal Verification]
 ---
-
+name: hermes-safety-evaluation
+description: Hermes Safety & Evaluation Core — R0-R6 risk stratification, 22 non-negotiable invariants, 12 decision gates, and independent verification.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'safety', 'invariants', 'evaluation', 'risk-management']
+    category: hermes-advanced
+    requires_tools: ['file_read']
+---
 # SKILL 05 â€” SAFETY, EVALUATION & EVOLUTION
 
 > **Load this skill when:** Task involves risk assessment, security review, quality gates, benchmarks, or evolution.

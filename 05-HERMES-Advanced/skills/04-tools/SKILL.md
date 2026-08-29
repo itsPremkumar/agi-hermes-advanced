@@ -1,14 +1,16 @@
-﻿---
-name: agi-tools-environment
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: Tool Registry, Discovery, Computer-Use, Sandbox, Protocol Interop
-planes: [Tool & Environment]
-hermes_tools: [web_search, browser, file_read, file_write, terminal_exec]
 ---
-
+name: hermes-tools
+description: Hermes Tool Registry & Sandbox — Dynamic tool discovery, poka-yoke parameter validation, Docker terminal backend, and computer-use sandboxing.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'tools', 'sandbox', 'poka-yoke', 'docker']
+    category: hermes-advanced
+    requires_tools: ['terminal_exec', 'file_read', 'file_write']
+    requires_toolsets: ['terminal']
+---
 # SKILL 04 â€” TOOLS & ENVIRONMENT
 
 > **Load this skill when:** Task needs tool use, computer/browser interaction, sandboxing, or protocol integration.

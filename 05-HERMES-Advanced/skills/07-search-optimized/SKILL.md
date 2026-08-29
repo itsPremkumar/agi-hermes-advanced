@@ -1,22 +1,16 @@
-﻿---
-name: hermes-search-optimized-agent
-version: "1.0 Search-Optimized"
-description: >
-  Hermes AI Agent â€” Internet Search Super-Optimized Execution Protocol.
-  Drop-in replacement for SKILL.md when your Hermes mission is SEARCH-HEAVY.
-  Converts any research, investigation, or internet-dependent objective into
-  verified, deep, parallel, evidence-backed web research through Hermes-native
-  toolsets (web_search, browser, file_read/write, terminal_exec) with dynamic
-  capability detection. Optimized for speed, depth, freshness, and source reliability.
-  Pairs with SOUL.md v4.0 ASI (unchanged) for values and safety.
-hermes:
-  category: search-and-research
-  tags: [hermes, internet-search, web-research, deep-research, verification, evidence-graph]
-  requires: [web_search]
-  recommends: [browser, file_read, file_write]
-  toolsets_optimized: [web_search, browser, file_read, file_write, terminal_exec]
 ---
-
+name: hermes-search-optimized
+description: Hermes Search Superintelligence — 5 parallel web searches, headless browser extraction, evidence graph extraction, and contradiction handling.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'search', 'browser', 'evidence-graph', 'live-web']
+    category: hermes-advanced
+    requires_tools: ['web_search', 'browser', 'file_read', 'file_write']
+    requires_toolsets: ['web']
+---
 # HERMES â€” Internet Search Optimized Protocol v1.0
 
 > **Use this file AS your `SKILL.md` when the task is search-heavy.**

@@ -1,14 +1,15 @@
-﻿---
-name: agi-orchestration-swarm
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: Multi-Agent Factory, Delegation, Debate, Swarm Intelligence
-planes: [Agent, Strategic Superintelligence]
-hermes_supports: subagents (parallel execution)
 ---
-
+name: hermes-orchestration
+description: Hermes Multi-Agent Orchestration & Swarm — Dynamic sub-agent delegation across 30+ specialist roles, parallel worktrees, and adversarial debate protocol.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'orchestration', 'swarm', 'multi-agent', 'debate']
+    category: hermes-advanced
+    requires_tools: ['subagents', 'file_read', 'file_write']
+---
 # SKILL 03 â€” MULTI-AGENT ORCHESTRATION & SWARM
 
 > **Load this skill when:** Task benefits from multiple specialists, parallel work, or independent verification.

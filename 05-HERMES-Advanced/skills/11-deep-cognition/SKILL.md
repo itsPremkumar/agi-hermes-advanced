@@ -1,15 +1,16 @@
-﻿---
+---
 name: hermes-deep-cognition
-description: Hermes Deep Cognitive Architecture - World Model, Self-Model, Memory Learning, Sleep-Time Compute, Skill Acquisition and Composition, Curriculum, Test-Time Search. Makes Hermes DEEPER not bigger (from 2026 expert review).
-version: "1.0 Advanced"
+description: Hermes Deep Cognitive Architecture — World Model, Self-Model, Memory Learning, Sleep-Time Compute, Skill Acquisition and Composition, Curriculum, Test-Time Search.
+version: "2.0 Advanced"
 author: Hermes Advanced Team
 license: MIT
 metadata:
   hermes:
-    tags: [hermes, deep-cognition, world-model, self-model, sleep-time, skill-acquisition, curriculum, agi]
+    tags: ['hermes', 'deep-cognition', 'world-model', 'self-model', 'sleep-time', 'curriculum', 'agi']
     category: hermes-advanced
+    requires_tools: ['web_search', 'file_read', 'file_write']
+    requires_toolsets: ['web']
 ---
-
 # SKILL 11 â€" DEEP COGNITIVE ARCHITECTURE
 
 > **Load this skill when:** Hermes needs to go DEEPER not bigger â€" world-model-based, learning, adaptive, AGI-oriented cognition.

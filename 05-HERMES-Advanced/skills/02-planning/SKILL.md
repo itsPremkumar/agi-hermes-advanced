@@ -1,13 +1,15 @@
-﻿---
-name: agi-planning-search
-version: "9.0"
-parent: hermes-advanced-executive
-hermes: true
-hermes_suite: HERMES-Advanced
-scope: Mission Compilation, Goal Decomposition, Planning, Search, Replanning
-planes: [Mission, Planning, Strategic Superintelligence]
 ---
-
+name: hermes-planning
+description: Hermes Planning & Search — Mission compilation, 6-plan portfolio, DAG task graph decomposition, search over strategies, and replanning.
+version: "2.0 Advanced"
+author: Hermes Advanced Team
+license: MIT
+metadata:
+  hermes:
+    tags: ['hermes', 'planning', 'dag', 'search', 'replanning']
+    category: hermes-advanced
+    requires_tools: ['file_read', 'file_write']
+---
 # SKILL 02 â€” PLANNING & SEARCH
 
 > **Load this skill when:** Task needs goal decomposition, task graphs, plan selection, or search over strategies.
